@@ -22,7 +22,7 @@ class PokemonSelector extends React.Component {
   // }
 
   render(){
-    const allPokemon = this.props.nationalDex.pokemon_entries || [];
+    const allPokemon = this.props.nationalDex|| [];
     return (
       <section className="pokemon-selector">
         {allPokemon.map((pkmn, i) => <Pokemon pokemon={pkmn} key={i} />)}

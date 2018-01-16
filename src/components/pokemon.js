@@ -3,9 +3,9 @@ import React from 'react';
 class Pokemon extends React.Component {
 
   render(){
-    const {pokemon} = this.props;
-    const dexNumber = pokemon.entry_number;
-    const name = pokemon.pokemon_species.name;
+    const pokemon = this.props.pokemon || {};
+    const dexNumber = pokemon.id;
+    const name = pokemon.name;
     return (
       <div className={`sprite ${name}`}><span>{dexNumber}</span><span> - {name}</span></div>
     )

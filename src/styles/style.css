@@ -52,10 +52,10 @@
 .sprite.sandshrew-alola{background-position:-260px -870px}
 .sprite.sandslash{background-position:-90px -30px}
 .sprite.sandslash-alola{background-position:-840px -900px}
-.sprite.nidoran{background-position:-120px -30px}
+.sprite.nidoran-f{background-position:-120px -30px}
 .sprite.nidorina{background-position:-150px -30px}
 .sprite.nidoqueen{background-position:-180px -30px}
-.sprite.nidoran-male{background-position:-210px -30px}
+.sprite.nidoran-m{background-position:-210px -30px}
 .sprite.nidorino{background-position:-240px -30px}
 .sprite.nidoking{background-position:-270px -30px}
 .sprite.clefairy{background-position:-390px -30px}
@@ -489,7 +489,7 @@
 .sprite.rayquaza{background-position:-40px -420px}
 .sprite.rayquaza-mega{background-position:-730px -840px}
 .sprite.jirachi{background-position:-810px -390px}
-.sprite.deoxys{background-position:-840px -390px}
+.sprite.deoxys-normal{background-position:-840px -390px}
 .sprite.deoxys-attack{background-position:-870px -390px}
 .sprite.deoxys-defense{background-position:-120px -420px}
 .sprite.deoxys-speed{background-position:-150px -420px}
@@ -521,7 +521,7 @@
 .sprite.burmy{background-position:-30px -450px}
 .sprite.burmy-sandy{background-position:-60px -450px}
 .sprite.burmy-trash{background-position:-90px -450px}
-.sprite.wormadam{background-position:-120px -450px}
+.sprite.wormadam-plant{background-position:-120px -450px}
 .sprite.wormadam-sandy{background-position:-150px -450px}
 .sprite.wormadam-trash{background-position:-180px -450px}
 .sprite.mothim{background-position:-210px -450px}
@@ -611,12 +611,12 @@
 .sprite.heatran{background-position:0 -540px}
 .sprite.regigigas{background-position:-40px -540px}
 .sprite.giratina{background-position:-840px -510px}
-.sprite.giratina-origin{background-position:-870px -510px}
+.sprite.giratina-altered{background-position:-870px -510px}
 .sprite.cresselia{background-position:-120px -540px}
 .sprite.phione{background-position:-150px -540px}
 .sprite.manaphy{background-position:-180px -540px}
 .sprite.darkrai{background-position:-80px -540px}
-.sprite.shaymin{background-position:-210px -540px}
+.sprite.shaymin-land{background-position:-210px -540px}
 .sprite.shaymin-sky{background-position:-240px -540px}
 .sprite.arceus{background-position:-270px -540px}
 .sprite.victini{background-position:-300px -540px}
@@ -677,13 +677,13 @@
 .sprite.whimsicott{background-position:-180px -600px}
 .sprite.petilil{background-position:-210px -600px}
 .sprite.lilligant{background-position:-240px -600px}
-.sprite.basculin{background-position:-270px -600px}
+.sprite.basculin-red-striped{background-position:-270px -600px}
 .sprite.basculin-blue-striped{background-position:-300px -600px}
 .sprite.sandile{background-position:-330px -600px}
 .sprite.krokorok{background-position:-360px -600px}
 .sprite.krookodile{background-position:-390px -600px}
 .sprite.darumaka{background-position:-420px -600px}
-.sprite.darmanitan{background-position:-450px -600px}
+.sprite.darmanitan-standard{background-position:-450px -600px}
 .sprite.darmanitan-zen{background-position:-480px -600px}
 .sprite.maractus{background-position:-510px -600px}
 .sprite.dwebble{background-position:-540px -600px}
@@ -778,22 +778,22 @@
 .sprite.cobalion{background-position:-510px -690px}
 .sprite.terrakion{background-position:-540px -690px}
 .sprite.virizion{background-position:-570px -690px}
-.sprite.tornadus{background-position:-600px -690px}
+.sprite.tornadus-incarnate{background-position:-600px -690px}
 .sprite.tornadus-therian{background-position:-630px -690px}
-.sprite.thundurus{background-position:-650px -540px}
+.sprite.thundurus-incarnate{background-position:-650px -540px}
 .sprite.thundurus-therian{background-position:-660px -690px}
 .sprite.reshiram{background-position:-700px -690px}
 .sprite.zekrom{background-position:-740px -690px}
-.sprite.landorus{background-position:-770px -690px}
+.sprite.landorus-incarnate{background-position:-770px -690px}
 .sprite.landorus-therian{background-position:-810px -690px}
 .sprite.kyurem{background-position:0 -720px}
 .sprite.kyurem-black{background-position:-40px -720px}
 .sprite.kyurem-white{background-position:-80px -720px}
-.sprite.keldeo{background-position:-840px -690px}
-.sprite.keldeo:hover,
+.sprite.keldeo-ordinary{background-position:-840px -690px}
+.sprite.keldeo-ordinary:hover,
 .sprite.keldeo-resolute{background-position:-870px -690px}
-.sprite.meloetta{background-position:-120px -720px}
-.sprite.meloetta:hover,
+.sprite.meloetta-aria{background-position:-120px -720px}
+.sprite.meloetta-aria:hover,
 .sprite.meloetta-pirouette{background-position:-150px -720px}
 .sprite.genesect{background-position:-180px -720px}
 .sprite.chespin{background-position:-210px -720px}
@@ -859,8 +859,8 @@
 .sprite.meowstic-male{background-position:-240px -780px}
 .sprite.honedge{background-position:-270px -780px}
 .sprite.doublade{background-position:-490px -750px}
-.sprite.aegislash{background-position:-300px -780px}
-.sprite.aegislash:hover,
+.sprite.aegislash-shield{background-position:-300px -780px}
+.sprite.aegislash-shield:hover,
 .sprite.aegislash-blade{background-position:-530px -750px}
 .sprite.spritzee{background-position:-330px -780px}
 .sprite.aromatisse{background-position:-360px -780px}
@@ -890,8 +890,8 @@
 .sprite.klefki{background-position:-240px -810px}
 .sprite.phantump{background-position:-270px -810px}
 .sprite.trevenant{background-position:-300px -810px}
-.sprite.pumpkaboo{background-position:-330px -810px}
-.sprite.gourgeist{background-position:-360px -810px}
+.sprite.pumpkaboo-average{background-position:-330px -810px}
+.sprite.gourgeist-average{background-position:-360px -810px}
 .sprite.bergmite{background-position:-390px -810px}
 .sprite.avalugg{background-position:-420px -810px}
 .sprite.noibat{background-position:-450px -810px}
@@ -1047,7 +1047,7 @@
 .sprite.darkrai,
 .sprite.samurott,
 .sprite.conkeldurr,
-.sprite.thundurus,
+.sprite.thundurus-incarnate,
 .sprite.thundurus-therian,
 .sprite.reshiram,
 .sprite.landorus,
@@ -1056,7 +1056,7 @@
 .sprite.kyurem-white,
 .sprite.pyroar-male,
 .sprite.doublade,
-.sprite.aegislash:hover,
+.sprite.aegislash-shield:hover,
 .sprite.aegislash-blade,
 .sprite.dragalge,
 .sprite.clawitzer,
@@ -1120,10 +1120,10 @@
 .art.sandshrew-alola{background-position:-672px -96px}
 .art.sandslash{background-position:-768px -96px}
 .art.sandslash-alola{background-position:-864px -96px}
-.art.nidoran{background-position:-960px -96px}
+.art.nidoran-f{background-position:-960px -96px}
 .art.nidorina{background-position:-1056px -96px}
 .art.nidoqueen{background-position:-1152px -96px}
-.art.nidoran-male{background-position:-1248px -96px}
+.art.nidoran-m{background-position:-1248px -96px}
 .art.nidorino{background-position:-1344px -96px}
 .art.nidoking{background-position:-1440px -96px}
 .art.clefairy{background-position:-1536px -96px}
@@ -1526,7 +1526,7 @@
 .art.rayquaza{background-position:-2208px -1344px}
 .art.rayquaza-mega{background-position:-2304px -1344px}
 .art.jirachi{background-position:-2400px -1344px}
-.art.deoxys{background-position:-2496px -1344px}
+.art.deoxys-normal{background-position:-2496px -1344px}
 .art.deoxys-attack{background-position:-2592px -1344px}
 .art.deoxys-defense{background-position:-2688px -1344px}
 .art.deoxys-speed{background-position:-2784px -1344px}
@@ -1558,7 +1558,7 @@
 .art.burmy{background-position:-2400px -1440px}
 .art.burmy-sandy{background-position:-2496px -1440px}
 .art.burmy-trash{background-position:-2592px -1440px}
-.art.wormadam{background-position:-2688px -1440px}
+.art.wormadam-plant{background-position:-2688px -1440px}
 .art.wormadam-sandy{background-position:-2784px -1440px}
 .art.wormadam-trash{background-position:0 -1536px}
 .art.mothim{background-position:-96px -1536px}
@@ -1648,12 +1648,12 @@
 .art.heatran{background-position:-2400px -1728px}
 .art.regigigas{background-position:-2496px -1728px}
 .art.giratina{background-position:-2592px -1728px}
-.art.giratina-origin{background-position:-2688px -1728px}
+.art.giratina-altered{background-position:-2688px -1728px}
 .art.cresselia{background-position:-2784px -1728px}
 .art.phione{background-position:0 -1824px}
 .art.manaphy{background-position:-96px -1824px}
 .art.darkrai{background-position:-192px -1824px}
-.art.shaymin{background-position:-288px -1824px}
+.art.shaymin-land{background-position:-288px -1824px}
 .art.shaymin-sky{background-position:-384px -1824px}
 .art.arceus{background-position:-480px -1824px}
 .art.victini{background-position:-576px -1824px}
@@ -1714,13 +1714,13 @@
 .art.whimsicott{background-position:-96px -2016px}
 .art.petilil{background-position:-192px -2016px}
 .art.lilligant{background-position:-288px -2016px}
-.art.basculin{background-position:-384px -2016px}
+.art.basculin-red-striped{background-position:-384px -2016px}
 .art.basculin-blue-striped{background-position:-480px -2016px}
 .art.sandile{background-position:-576px -2016px}
 .art.krokorok{background-position:-672px -2016px}
 .art.krookodile{background-position:-768px -2016px}
 .art.darumaka{background-position:-864px -2016px}
-.art.darmanitan{background-position:-960px -2016px}
+.art.darmanitan-standard{background-position:-960px -2016px}
 .art.maractus{background-position:-1056px -2016px}
 .art.dwebble{background-position:-1152px -2016px}
 .art.crustle{background-position:-1248px -2016px}
@@ -1814,22 +1814,22 @@
 .art.cobalion{background-position:-1056px -2304px}
 .art.terrakion{background-position:-1152px -2304px}
 .art.virizion{background-position:-1248px -2304px}
-.art.tornadus{background-position:-1344px -2304px}
+.art.tornadus-incarnate{background-position:-1344px -2304px}
 .art.tornadus-therian{background-position:-1440px -2304px}
-.art.thundurus{background-position:-1536px -2304px}
+.art.thundurus-incarnate{background-position:-1536px -2304px}
 .art.thundurus-therian{background-position:-1632px -2304px}
 .art.reshiram{background-position:-1728px -2304px}
 .art.zekrom{background-position:-1824px -2304px}
-.art.landorus{background-position:-1920px -2304px}
+.art.landorus-incarnate{background-position:-1920px -2304px}
 .art.landorus-therian{background-position:-2016px -2304px}
 .art.kyurem{background-position:-2112px -2304px}
 .art.kyurem-black{background-position:-2208px -2304px}
 .art.kyurem-white{background-position:-2304px -2304px}
-.art.keldeo{background-position:-2400px -2304px}
-.art.keldeo:hover,
+.art.keldeo-ordinary{background-position:-2400px -2304px}
+.art.keldeo-ordinary:hover,
 .art.keldeo-resolute{background-position:-2496px -2304px}
-.art.meloetta{background-position:-2592px -2304px}
-.art.meloetta:hover,
+.art.meloetta-aria{background-position:-2592px -2304px}
+.art.meloetta-aria:hover,
 .art.meloetta-pirouette{background-position:-2688px -2304px}
 .art.genesect{background-position:-2784px -2304px}
 .art.chespin{background-position:0 -2400px}
@@ -1866,8 +1866,8 @@
 .art.meowstic-male{background-position:-96px -2496px}
 .art.honedge{background-position:-192px -2496px}
 .art.doublade{background-position:-288px -2496px}
-.art.aegislash{background-position:-384px -2496px}
-.art.aegislash:hover,
+.art.aegislash-shield{background-position:-384px -2496px}
+.art.aegislash-shield:hover,
 .art.aegislash-blade{background-position:-480px -2496px}
 .art.spritzee{background-position:-576px -2496px}
 .art.aromatisse{background-position:-672px -2496px}
@@ -1897,8 +1897,8 @@
 .art.klefki{background-position:-96px -2592px}
 .art.phantump{background-position:-192px -2592px}
 .art.trevenant{background-position:-288px -2592px}
-.art.pumpkaboo{background-position:-384px -2592px}
-.art.gourgeist{background-position:-480px -2592px}
+.art.pumpkaboo-average{background-position:-384px -2592px}
+.art.gourgeist-average{background-position:-480px -2592px}
 .art.bergmite{background-position:-576px -2592px}
 .art.avalugg{background-position:-672px -2592px}
 .art.noibat{background-position:-768px -2592px}
