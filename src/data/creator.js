@@ -13,7 +13,8 @@ for (let i = 1; i < latestPokemonIndex; i++) {
     let pokemon = {
         id: body.id,
         name: body.name,
-        types: body.types.map((type) => type.type.name)
+        types: body.types.map((type) => type.type.name),
+        isVisible: true
     };
     allPokemon[i] = pokemon;
     console.log(`Pokemon ${pokemon.name} completed`);

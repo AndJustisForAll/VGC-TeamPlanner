@@ -1,2 +1,3607 @@
-var nationalDex = [null,{"id":1,"name":"bulbasaur","types":["poison","grass"]},{"id":2,"name":"ivysaur","types":["poison","grass"]},{"id":3,"name":"venusaur","types":["poison","grass"]},{"id":4,"name":"charmander","types":["fire"]},{"id":5,"name":"charmeleon","types":["fire"]},{"id":6,"name":"charizard","types":["flying","fire"]},{"id":7,"name":"squirtle","types":["water"]},{"id":8,"name":"wartortle","types":["water"]},{"id":9,"name":"blastoise","types":["water"]},{"id":10,"name":"caterpie","types":["bug"]},{"id":11,"name":"metapod","types":["bug"]},{"id":12,"name":"butterfree","types":["flying","bug"]},{"id":13,"name":"weedle","types":["poison","bug"]},{"id":14,"name":"kakuna","types":["poison","bug"]},{"id":15,"name":"beedrill","types":["poison","bug"]},{"id":16,"name":"pidgey","types":["flying","normal"]},{"id":17,"name":"pidgeotto","types":["flying","normal"]},{"id":18,"name":"pidgeot","types":["flying","normal"]},{"id":19,"name":"rattata","types":["normal"]},{"id":20,"name":"raticate","types":["normal"]},{"id":21,"name":"spearow","types":["flying","normal"]},{"id":22,"name":"fearow","types":["flying","normal"]},{"id":23,"name":"ekans","types":["poison"]},{"id":24,"name":"arbok","types":["poison"]},{"id":25,"name":"pikachu","types":["electric"]},{"id":26,"name":"raichu","types":["electric"]},{"id":27,"name":"sandshrew","types":["ground"]},{"id":28,"name":"sandslash","types":["ground"]},{"id":29,"name":"nidoran-f","types":["poison"]},{"id":30,"name":"nidorina","types":["poison"]},{"id":31,"name":"nidoqueen","types":["ground","poison"]},{"id":32,"name":"nidoran-m","types":["poison"]},{"id":33,"name":"nidorino","types":["poison"]},{"id":34,"name":"nidoking","types":["ground","poison"]},{"id":35,"name":"clefairy","types":["fairy"]},{"id":36,"name":"clefable","types":["fairy"]},{"id":37,"name":"vulpix","types":["fire"]},{"id":38,"name":"ninetales","types":["fire"]},{"id":39,"name":"jigglypuff","types":["fairy","normal"]},{"id":40,"name":"wigglytuff","types":["fairy","normal"]},{"id":41,"name":"zubat","types":["flying","poison"]},{"id":42,"name":"golbat","types":["flying","poison"]},{"id":43,"name":"oddish","types":["poison","grass"]},{"id":44,"name":"gloom","types":["poison","grass"]},{"id":45,"name":"vileplume","types":["poison","grass"]},{"id":46,"name":"paras","types":["grass","bug"]},{"id":47,"name":"parasect","types":["grass","bug"]},{"id":48,"name":"venonat","types":["poison","bug"]},{"id":49,"name":"venomoth","types":["poison","bug"]},{"id":50,"name":"diglett","types":["ground"]},{"id":51,"name":"dugtrio","types":["ground"]},{"id":52,"name":"meowth","types":["normal"]},{"id":53,"name":"persian","types":["normal"]},{"id":54,"name":"psyduck","types":["water"]},{"id":55,"name":"golduck","types":["water"]},{"id":56,"name":"mankey","types":["fighting"]},{"id":57,"name":"primeape","types":["fighting"]},{"id":58,"name":"growlithe","types":["fire"]},{"id":59,"name":"arcanine","types":["fire"]},{"id":60,"name":"poliwag","types":["water"]},{"id":61,"name":"poliwhirl","types":["water"]},{"id":62,"name":"poliwrath","types":["fighting","water"]},{"id":63,"name":"abra","types":["psychic"]},{"id":64,"name":"kadabra","types":["psychic"]},{"id":65,"name":"alakazam","types":["psychic"]},{"id":66,"name":"machop","types":["fighting"]},{"id":67,"name":"machoke","types":["fighting"]},{"id":68,"name":"machamp","types":["fighting"]},{"id":69,"name":"bellsprout","types":["poison","grass"]},{"id":70,"name":"weepinbell","types":["poison","grass"]},{"id":71,"name":"victreebel","types":["poison","grass"]},{"id":72,"name":"tentacool","types":["poison","water"]},{"id":73,"name":"tentacruel","types":["poison","water"]},{"id":74,"name":"geodude","types":["ground","rock"]},{"id":75,"name":"graveler","types":["ground","rock"]},{"id":76,"name":"golem","types":["ground","rock"]},{"id":77,"name":"ponyta","types":["fire"]},{"id":78,"name":"rapidash","types":["fire"]},{"id":79,"name":"slowpoke","types":["psychic","water"]},{"id":80,"name":"slowbro","types":["psychic","water"]},{"id":81,"name":"magnemite","types":["steel","electric"]},{"id":82,"name":"magneton","types":["steel","electric"]},{"id":83,"name":"farfetchd","types":["flying","normal"]},{"id":84,"name":"doduo","types":["flying","normal"]},{"id":85,"name":"dodrio","types":["flying","normal"]},{"id":86,"name":"seel","types":["water"]},{"id":87,"name":"dewgong","types":["ice","water"]},{"id":88,"name":"grimer","types":["poison"]},{"id":89,"name":"muk","types":["poison"]},{"id":90,"name":"shellder","types":["water"]},{"id":91,"name":"cloyster","types":["ice","water"]},{"id":92,"name":"gastly","types":["poison","ghost"]},{"id":93,"name":"haunter","types":["poison","ghost"]},{"id":94,"name":"gengar","types":["poison","ghost"]},{"id":95,"name":"onix","types":["ground","rock"]},{"id":96,"name":"drowzee","types":["psychic"]},{"id":97,"name":"hypno","types":["psychic"]},{"id":98,"name":"krabby","types":["water"]},{"id":99,"name":"kingler","types":["water"]},{"id":100,"name":"voltorb","types":["electric"]},{"id":101,"name":"electrode","types":["electric"]},{"id":102,"name":"exeggcute","types":["psychic","grass"]},{"id":103,"name":"exeggutor","types":["psychic","grass"]},{"id":104,"name":"cubone","types":["ground"]},{"id":105,"name":"marowak","types":["ground"]},{"id":106,"name":"hitmonlee","types":["fighting"]},{"id":107,"name":"hitmonchan","types":["fighting"]},{"id":108,"name":"lickitung","types":["normal"]},{"id":109,"name":"koffing","types":["poison"]},{"id":110,"name":"weezing","types":["poison"]},{"id":111,"name":"rhyhorn","types":["rock","ground"]},{"id":112,"name":"rhydon","types":["rock","ground"]},{"id":113,"name":"chansey","types":["normal"]},{"id":114,"name":"tangela","types":["grass"]},{"id":115,"name":"kangaskhan","types":["normal"]},{"id":116,"name":"horsea","types":["water"]},{"id":117,"name":"seadra","types":["water"]},{"id":118,"name":"goldeen","types":["water"]},{"id":119,"name":"seaking","types":["water"]},{"id":120,"name":"staryu","types":["water"]},{"id":121,"name":"starmie","types":["psychic","water"]},{"id":122,"name":"mr-mime","types":["fairy","psychic"]},{"id":123,"name":"scyther","types":["flying","bug"]},{"id":124,"name":"jynx","types":["psychic","ice"]},{"id":125,"name":"electabuzz","types":["electric"]},{"id":126,"name":"magmar","types":["fire"]},{"id":127,"name":"pinsir","types":["bug"]},{"id":128,"name":"tauros","types":["normal"]},{"id":129,"name":"magikarp","types":["water"]},{"id":130,"name":"gyarados","types":["flying","water"]},{"id":131,"name":"lapras","types":["ice","water"]},{"id":132,"name":"ditto","types":["normal"]},{"id":133,"name":"eevee","types":["normal"]},{"id":134,"name":"vaporeon","types":["water"]},{"id":135,"name":"jolteon","types":["electric"]},{"id":136,"name":"flareon","types":["fire"]},{"id":137,"name":"porygon","types":["normal"]},{"id":138,"name":"omanyte","types":["water","rock"]},{"id":139,"name":"omastar","types":["water","rock"]},{"id":140,"name":"kabuto","types":["water","rock"]},{"id":141,"name":"kabutops","types":["water","rock"]},{"id":142,"name":"aerodactyl","types":["flying","rock"]},{"id":143,"name":"snorlax","types":["normal"]},{"id":144,"name":"articuno","types":["flying","ice"]},{"id":145,"name":"zapdos","types":["flying","electric"]},{"id":146,"name":"moltres","types":["flying","fire"]},{"id":147,"name":"dratini","types":["dragon"]},{"id":148,"name":"dragonair","types":["dragon"]},{"id":149,"name":"dragonite","types":["flying","dragon"]},{"id":150,"name":"mewtwo","types":["psychic"]},{"id":151,"name":"mew","types":["psychic"]},{"id":152,"name":"chikorita","types":["grass"]},{"id":153,"name":"bayleef","types":["grass"]},{"id":154,"name":"meganium","types":["grass"]},{"id":155,"name":"cyndaquil","types":["fire"]},{"id":156,"name":"quilava","types":["fire"]},{"id":157,"name":"typhlosion","types":["fire"]},{"id":158,"name":"totodile","types":["water"]},{"id":159,"name":"croconaw","types":["water"]},{"id":160,"name":"feraligatr","types":["water"]},{"id":161,"name":"sentret","types":["normal"]},{"id":162,"name":"furret","types":["normal"]},{"id":163,"name":"hoothoot","types":["flying","normal"]},{"id":164,"name":"noctowl","types":["flying","normal"]},{"id":165,"name":"ledyba","types":["flying","bug"]},{"id":166,"name":"ledian","types":["flying","bug"]},{"id":167,"name":"spinarak","types":["poison","bug"]},{"id":168,"name":"ariados","types":["poison","bug"]},{"id":169,"name":"crobat","types":["flying","poison"]},{"id":170,"name":"chinchou","types":["electric","water"]},{"id":171,"name":"lanturn","types":["electric","water"]},{"id":172,"name":"pichu","types":["electric"]},{"id":173,"name":"cleffa","types":["fairy"]},{"id":174,"name":"igglybuff","types":["fairy","normal"]},{"id":175,"name":"togepi","types":["fairy"]},{"id":176,"name":"togetic","types":["flying","fairy"]},{"id":177,"name":"natu","types":["flying","psychic"]},{"id":178,"name":"xatu","types":["flying","psychic"]},{"id":179,"name":"mareep","types":["electric"]},{"id":180,"name":"flaaffy","types":["electric"]},{"id":181,"name":"ampharos","types":["electric"]},{"id":182,"name":"bellossom","types":["grass"]},{"id":183,"name":"marill","types":["fairy","water"]},{"id":184,"name":"azumarill","types":["fairy","water"]},{"id":185,"name":"sudowoodo","types":["rock"]},{"id":186,"name":"politoed","types":["water"]},{"id":187,"name":"hoppip","types":["flying","grass"]},{"id":188,"name":"skiploom","types":["flying","grass"]},{"id":189,"name":"jumpluff","types":["flying","grass"]},{"id":190,"name":"aipom","types":["normal"]},{"id":191,"name":"sunkern","types":["grass"]},{"id":192,"name":"sunflora","types":["grass"]},{"id":193,"name":"yanma","types":["flying","bug"]},{"id":194,"name":"wooper","types":["ground","water"]},{"id":195,"name":"quagsire","types":["ground","water"]},{"id":196,"name":"espeon","types":["psychic"]},{"id":197,"name":"umbreon","types":["dark"]},{"id":198,"name":"murkrow","types":["flying","dark"]},{"id":199,"name":"slowking","types":["psychic","water"]},{"id":200,"name":"misdreavus","types":["ghost"]},{"id":201,"name":"unown","types":["psychic"]},{"id":202,"name":"wobbuffet","types":["psychic"]},{"id":203,"name":"girafarig","types":["psychic","normal"]},{"id":204,"name":"pineco","types":["bug"]},{"id":205,"name":"forretress","types":["steel","bug"]},{"id":206,"name":"dunsparce","types":["normal"]},{"id":207,"name":"gligar","types":["flying","ground"]},{"id":208,"name":"steelix","types":["ground","steel"]},{"id":209,"name":"snubbull","types":["fairy"]},{"id":210,"name":"granbull","types":["fairy"]},{"id":211,"name":"qwilfish","types":["poison","water"]},{"id":212,"name":"scizor","types":["steel","bug"]},{"id":213,"name":"shuckle","types":["rock","bug"]},{"id":214,"name":"heracross","types":["fighting","bug"]},{"id":215,"name":"sneasel","types":["ice","dark"]},{"id":216,"name":"teddiursa","types":["normal"]},{"id":217,"name":"ursaring","types":["normal"]},{"id":218,"name":"slugma","types":["fire"]},{"id":219,"name":"magcargo","types":["rock","fire"]},{"id":220,"name":"swinub","types":["ground","ice"]},{"id":221,"name":"piloswine","types":["ground","ice"]},{"id":222,"name":"corsola","types":["rock","water"]},{"id":223,"name":"remoraid","types":["water"]},{"id":224,"name":"octillery","types":["water"]},{"id":225,"name":"delibird","types":["flying","ice"]},{"id":226,"name":"mantine","types":["flying","water"]},{"id":227,"name":"skarmory","types":["flying","steel"]},{"id":228,"name":"houndour","types":["fire","dark"]},{"id":229,"name":"houndoom","types":["fire","dark"]},{"id":230,"name":"kingdra","types":["dragon","water"]},{"id":231,"name":"phanpy","types":["ground"]},{"id":232,"name":"donphan","types":["ground"]},{"id":233,"name":"porygon2","types":["normal"]},{"id":234,"name":"stantler","types":["normal"]},{"id":235,"name":"smeargle","types":["normal"]},{"id":236,"name":"tyrogue","types":["fighting"]},{"id":237,"name":"hitmontop","types":["fighting"]},{"id":238,"name":"smoochum","types":["psychic","ice"]},{"id":239,"name":"elekid","types":["electric"]},{"id":240,"name":"magby","types":["fire"]},{"id":241,"name":"miltank","types":["normal"]},{"id":242,"name":"blissey","types":["normal"]},{"id":243,"name":"raikou","types":["electric"]},{"id":244,"name":"entei","types":["fire"]},{"id":245,"name":"suicune","types":["water"]},{"id":246,"name":"larvitar","types":["ground","rock"]},{"id":247,"name":"pupitar","types":["ground","rock"]},{"id":248,"name":"tyranitar","types":["dark","rock"]},{"id":249,"name":"lugia","types":["flying","psychic"]},{"id":250,"name":"ho-oh","types":["flying","fire"]},{"id":251,"name":"celebi","types":["grass","psychic"]},{"id":252,"name":"treecko","types":["grass"]},{"id":253,"name":"grovyle","types":["grass"]},{"id":254,"name":"sceptile","types":["grass"]},{"id":255,"name":"torchic","types":["fire"]},{"id":256,"name":"combusken","types":["fighting","fire"]},{"id":257,"name":"blaziken","types":["fighting","fire"]},{"id":258,"name":"mudkip","types":["water"]},{"id":259,"name":"marshtomp","types":["ground","water"]},{"id":260,"name":"swampert","types":["ground","water"]},{"id":261,"name":"poochyena","types":["dark"]},{"id":262,"name":"mightyena","types":["dark"]},{"id":263,"name":"zigzagoon","types":["normal"]},{"id":264,"name":"linoone","types":["normal"]},{"id":265,"name":"wurmple","types":["bug"]},{"id":266,"name":"silcoon","types":["bug"]},{"id":267,"name":"beautifly","types":["flying","bug"]},{"id":268,"name":"cascoon","types":["bug"]},{"id":269,"name":"dustox","types":["poison","bug"]},{"id":270,"name":"lotad","types":["grass","water"]},{"id":271,"name":"lombre","types":["grass","water"]},{"id":272,"name":"ludicolo","types":["grass","water"]},{"id":273,"name":"seedot","types":["grass"]},{"id":274,"name":"nuzleaf","types":["dark","grass"]},{"id":275,"name":"shiftry","types":["dark","grass"]},{"id":276,"name":"taillow","types":["flying","normal"]},{"id":277,"name":"swellow","types":["flying","normal"]},{"id":278,"name":"wingull","types":["flying","water"]},{"id":279,"name":"pelipper","types":["flying","water"]},{"id":280,"name":"ralts","types":["fairy","psychic"]},{"id":281,"name":"kirlia","types":["fairy","psychic"]},{"id":282,"name":"gardevoir","types":["fairy","psychic"]},{"id":283,"name":"surskit","types":["water","bug"]},{"id":284,"name":"masquerain","types":["flying","bug"]},{"id":285,"name":"shroomish","types":["grass"]},{"id":286,"name":"breloom","types":["fighting","grass"]},{"id":287,"name":"slakoth","types":["normal"]},{"id":288,"name":"vigoroth","types":["normal"]},{"id":289,"name":"slaking","types":["normal"]},{"id":290,"name":"nincada","types":["ground","bug"]},{"id":291,"name":"ninjask","types":["flying","bug"]},{"id":292,"name":"shedinja","types":["ghost","bug"]},{"id":293,"name":"whismur","types":["normal"]},{"id":294,"name":"loudred","types":["normal"]},{"id":295,"name":"exploud","types":["normal"]},{"id":296,"name":"makuhita","types":["fighting"]},{"id":297,"name":"hariyama","types":["fighting"]},{"id":298,"name":"azurill","types":["fairy","normal"]},{"id":299,"name":"nosepass","types":["rock"]},{"id":300,"name":"skitty","types":["normal"]},{"id":301,"name":"delcatty","types":["normal"]},{"id":302,"name":"sableye","types":["ghost","dark"]},{"id":303,"name":"mawile","types":["fairy","steel"]},{"id":304,"name":"aron","types":["rock","steel"]},{"id":305,"name":"lairon","types":["rock","steel"]},{"id":306,"name":"aggron","types":["rock","steel"]},{"id":307,"name":"meditite","types":["psychic","fighting"]},{"id":308,"name":"medicham","types":["psychic","fighting"]},{"id":309,"name":"electrike","types":["electric"]},{"id":310,"name":"manectric","types":["electric"]},{"id":311,"name":"plusle","types":["electric"]},{"id":312,"name":"minun","types":["electric"]},{"id":313,"name":"volbeat","types":["bug"]},{"id":314,"name":"illumise","types":["bug"]},{"id":315,"name":"roselia","types":["poison","grass"]},{"id":316,"name":"gulpin","types":["poison"]},{"id":317,"name":"swalot","types":["poison"]},{"id":318,"name":"carvanha","types":["dark","water"]},{"id":319,"name":"sharpedo","types":["dark","water"]},{"id":320,"name":"wailmer","types":["water"]},{"id":321,"name":"wailord","types":["water"]},{"id":322,"name":"numel","types":["ground","fire"]},{"id":323,"name":"camerupt","types":["ground","fire"]},{"id":324,"name":"torkoal","types":["fire"]},{"id":325,"name":"spoink","types":["psychic"]},{"id":326,"name":"grumpig","types":["psychic"]},{"id":327,"name":"spinda","types":["normal"]},{"id":328,"name":"trapinch","types":["ground"]},{"id":329,"name":"vibrava","types":["dragon","ground"]},{"id":330,"name":"flygon","types":["dragon","ground"]},{"id":331,"name":"cacnea","types":["grass"]},{"id":332,"name":"cacturne","types":["dark","grass"]},{"id":333,"name":"swablu","types":["flying","normal"]},{"id":334,"name":"altaria","types":["flying","dragon"]},{"id":335,"name":"zangoose","types":["normal"]},{"id":336,"name":"seviper","types":["poison"]},{"id":337,"name":"lunatone","types":["psychic","rock"]},{"id":338,"name":"solrock","types":["psychic","rock"]},{"id":339,"name":"barboach","types":["ground","water"]},{"id":340,"name":"whiscash","types":["ground","water"]},{"id":341,"name":"corphish","types":["water"]},{"id":342,"name":"crawdaunt","types":["dark","water"]},{"id":343,"name":"baltoy","types":["psychic","ground"]},{"id":344,"name":"claydol","types":["psychic","ground"]},{"id":345,"name":"lileep","types":["grass","rock"]},{"id":346,"name":"cradily","types":["grass","rock"]},{"id":347,"name":"anorith","types":["bug","rock"]},{"id":348,"name":"armaldo","types":["bug","rock"]},{"id":349,"name":"feebas","types":["water"]},{"id":350,"name":"milotic","types":["water"]},{"id":351,"name":"castform","types":["normal"]},{"id":352,"name":"kecleon","types":["normal"]},{"id":353,"name":"shuppet","types":["ghost"]},{"id":354,"name":"banette","types":["ghost"]},{"id":355,"name":"duskull","types":["ghost"]},{"id":356,"name":"dusclops","types":["ghost"]},{"id":357,"name":"tropius","types":["flying","grass"]},{"id":358,"name":"chimecho","types":["psychic"]},{"id":359,"name":"absol","types":["dark"]},{"id":360,"name":"wynaut","types":["psychic"]},{"id":361,"name":"snorunt","types":["ice"]},{"id":362,"name":"glalie","types":["ice"]},{"id":363,"name":"spheal","types":["water","ice"]},{"id":364,"name":"sealeo","types":["water","ice"]},{"id":365,"name":"walrein","types":["water","ice"]},{"id":366,"name":"clamperl","types":["water"]},{"id":367,"name":"huntail","types":["water"]},{"id":368,"name":"gorebyss","types":["water"]},{"id":369,"name":"relicanth","types":["rock","water"]},{"id":370,"name":"luvdisc","types":["water"]},{"id":371,"name":"bagon","types":["dragon"]},{"id":372,"name":"shelgon","types":["dragon"]},{"id":373,"name":"salamence","types":["flying","dragon"]},{"id":374,"name":"beldum","types":["psychic","steel"]},{"id":375,"name":"metang","types":["psychic","steel"]},{"id":376,"name":"metagross","types":["psychic","steel"]},{"id":377,"name":"regirock","types":["rock"]},{"id":378,"name":"regice","types":["ice"]},{"id":379,"name":"registeel","types":["steel"]},{"id":380,"name":"latias","types":["psychic","dragon"]},{"id":381,"name":"latios","types":["psychic","dragon"]},{"id":382,"name":"kyogre","types":["water"]},{"id":383,"name":"groudon","types":["ground"]},{"id":384,"name":"rayquaza","types":["flying","dragon"]},{"id":385,"name":"jirachi","types":["psychic","steel"]},{"id":386,"name":"deoxys-normal","types":["psychic"]},{"id":387,"name":"turtwig","types":["grass"]},{"id":388,"name":"grotle","types":["grass"]},{"id":389,"name":"torterra","types":["ground","grass"]},{"id":390,"name":"chimchar","types":["fire"]},{"id":391,"name":"monferno","types":["fighting","fire"]},{"id":392,"name":"infernape","types":["fighting","fire"]},{"id":393,"name":"piplup","types":["water"]},{"id":394,"name":"prinplup","types":["water"]},{"id":395,"name":"empoleon","types":["steel","water"]},{"id":396,"name":"starly","types":["flying","normal"]},{"id":397,"name":"staravia","types":["flying","normal"]},{"id":398,"name":"staraptor","types":["flying","normal"]},{"id":399,"name":"bidoof","types":["normal"]},{"id":400,"name":"bibarel","types":["water","normal"]},{"id":401,"name":"kricketot","types":["bug"]},{"id":402,"name":"kricketune","types":["bug"]},{"id":403,"name":"shinx","types":["electric"]},{"id":404,"name":"luxio","types":["electric"]},{"id":405,"name":"luxray","types":["electric"]},{"id":406,"name":"budew","types":["poison","grass"]},{"id":407,"name":"roserade","types":["poison","grass"]},{"id":408,"name":"cranidos","types":["rock"]},{"id":409,"name":"rampardos","types":["rock"]},{"id":410,"name":"shieldon","types":["steel","rock"]},{"id":411,"name":"bastiodon","types":["steel","rock"]},{"id":412,"name":"burmy","types":["bug"]},{"id":413,"name":"wormadam-plant","types":["grass","bug"]},{"id":414,"name":"mothim","types":["flying","bug"]},{"id":415,"name":"combee","types":["flying","bug"]},{"id":416,"name":"vespiquen","types":["flying","bug"]},{"id":417,"name":"pachirisu","types":["electric"]},{"id":418,"name":"buizel","types":["water"]},{"id":419,"name":"floatzel","types":["water"]},{"id":420,"name":"cherubi","types":["grass"]},{"id":421,"name":"cherrim","types":["grass"]},{"id":422,"name":"shellos","types":["water"]},{"id":423,"name":"gastrodon","types":["ground","water"]},{"id":424,"name":"ambipom","types":["normal"]},{"id":425,"name":"drifloon","types":["flying","ghost"]},{"id":426,"name":"drifblim","types":["flying","ghost"]},{"id":427,"name":"buneary","types":["normal"]},{"id":428,"name":"lopunny","types":["normal"]},{"id":429,"name":"mismagius","types":["ghost"]},{"id":430,"name":"honchkrow","types":["flying","dark"]},{"id":431,"name":"glameow","types":["normal"]},{"id":432,"name":"purugly","types":["normal"]},{"id":433,"name":"chingling","types":["psychic"]},{"id":434,"name":"stunky","types":["dark","poison"]},{"id":435,"name":"skuntank","types":["dark","poison"]},{"id":436,"name":"bronzor","types":["psychic","steel"]},{"id":437,"name":"bronzong","types":["psychic","steel"]},{"id":438,"name":"bonsly","types":["rock"]},{"id":439,"name":"mime-jr","types":["fairy","psychic"]},{"id":440,"name":"happiny","types":["normal"]},{"id":441,"name":"chatot","types":["flying","normal"]},{"id":442,"name":"spiritomb","types":["dark","ghost"]},{"id":443,"name":"gible","types":["ground","dragon"]},{"id":444,"name":"gabite","types":["ground","dragon"]},{"id":445,"name":"garchomp","types":["ground","dragon"]},{"id":446,"name":"munchlax","types":["normal"]},{"id":447,"name":"riolu","types":["fighting"]},{"id":448,"name":"lucario","types":["steel","fighting"]},{"id":449,"name":"hippopotas","types":["ground"]},{"id":450,"name":"hippowdon","types":["ground"]},{"id":451,"name":"skorupi","types":["bug","poison"]},{"id":452,"name":"drapion","types":["dark","poison"]},{"id":453,"name":"croagunk","types":["fighting","poison"]},{"id":454,"name":"toxicroak","types":["fighting","poison"]},{"id":455,"name":"carnivine","types":["grass"]},{"id":456,"name":"finneon","types":["water"]},{"id":457,"name":"lumineon","types":["water"]},{"id":458,"name":"mantyke","types":["flying","water"]},{"id":459,"name":"snover","types":["ice","grass"]},{"id":460,"name":"abomasnow","types":["ice","grass"]},{"id":461,"name":"weavile","types":["ice","dark"]},{"id":462,"name":"magnezone","types":["steel","electric"]},{"id":463,"name":"lickilicky","types":["normal"]},{"id":464,"name":"rhyperior","types":["rock","ground"]},{"id":465,"name":"tangrowth","types":["grass"]},{"id":466,"name":"electivire","types":["electric"]},{"id":467,"name":"magmortar","types":["fire"]},{"id":468,"name":"togekiss","types":["flying","fairy"]},{"id":469,"name":"yanmega","types":["flying","bug"]},{"id":470,"name":"leafeon","types":["grass"]},{"id":471,"name":"glaceon","types":["ice"]},{"id":472,"name":"gliscor","types":["flying","ground"]},{"id":473,"name":"mamoswine","types":["ground","ice"]},{"id":474,"name":"porygon-z","types":["normal"]},{"id":475,"name":"gallade","types":["fighting","psychic"]},{"id":476,"name":"probopass","types":["steel","rock"]},{"id":477,"name":"dusknoir","types":["ghost"]},{"id":478,"name":"froslass","types":["ghost","ice"]},{"id":479,"name":"rotom","types":["ghost","electric"]},{"id":480,"name":"uxie","types":["psychic"]},{"id":481,"name":"mesprit","types":["psychic"]},{"id":482,"name":"azelf","types":["psychic"]},{"id":483,"name":"dialga","types":["dragon","steel"]},{"id":484,"name":"palkia","types":["dragon","water"]},{"id":485,"name":"heatran","types":["steel","fire"]},{"id":486,"name":"regigigas","types":["normal"]},{"id":487,"name":"giratina-altered","types":["dragon","ghost"]},{"id":488,"name":"cresselia","types":["psychic"]},{"id":489,"name":"phione","types":["water"]},{"id":490,"name":"manaphy","types":["water"]},{"id":491,"name":"darkrai","types":["dark"]},{"id":492,"name":"shaymin-land","types":["grass"]},{"id":493,"name":"arceus","types":["normal"]},{"id":494,"name":"victini","types":["fire","psychic"]},{"id":495,"name":"snivy","types":["grass"]},{"id":496,"name":"servine","types":["grass"]},{"id":497,"name":"serperior","types":["grass"]},{"id":498,"name":"tepig","types":["fire"]},{"id":499,"name":"pignite","types":["fighting","fire"]},{"id":500,"name":"emboar","types":["fighting","fire"]},{"id":501,"name":"oshawott","types":["water"]},{"id":502,"name":"dewott","types":["water"]},{"id":503,"name":"samurott","types":["water"]},{"id":504,"name":"patrat","types":["normal"]},{"id":505,"name":"watchog","types":["normal"]},{"id":506,"name":"lillipup","types":["normal"]},{"id":507,"name":"herdier","types":["normal"]},{"id":508,"name":"stoutland","types":["normal"]},{"id":509,"name":"purrloin","types":["dark"]},{"id":510,"name":"liepard","types":["dark"]},{"id":511,"name":"pansage","types":["grass"]},{"id":512,"name":"simisage","types":["grass"]},{"id":513,"name":"pansear","types":["fire"]},{"id":514,"name":"simisear","types":["fire"]},{"id":515,"name":"panpour","types":["water"]},{"id":516,"name":"simipour","types":["water"]},{"id":517,"name":"munna","types":["psychic"]},{"id":518,"name":"musharna","types":["psychic"]},{"id":519,"name":"pidove","types":["flying","normal"]},{"id":520,"name":"tranquill","types":["flying","normal"]},{"id":521,"name":"unfezant","types":["flying","normal"]},{"id":522,"name":"blitzle","types":["electric"]},{"id":523,"name":"zebstrika","types":["electric"]},{"id":524,"name":"roggenrola","types":["rock"]},{"id":525,"name":"boldore","types":["rock"]},{"id":526,"name":"gigalith","types":["rock"]},{"id":527,"name":"woobat","types":["flying","psychic"]},{"id":528,"name":"swoobat","types":["flying","psychic"]},{"id":529,"name":"drilbur","types":["ground"]},{"id":530,"name":"excadrill","types":["steel","ground"]},{"id":531,"name":"audino","types":["normal"]},{"id":532,"name":"timburr","types":["fighting"]},{"id":533,"name":"gurdurr","types":["fighting"]},{"id":534,"name":"conkeldurr","types":["fighting"]},{"id":535,"name":"tympole","types":["water"]},{"id":536,"name":"palpitoad","types":["ground","water"]},{"id":537,"name":"seismitoad","types":["ground","water"]},{"id":538,"name":"throh","types":["fighting"]},{"id":539,"name":"sawk","types":["fighting"]},{"id":540,"name":"sewaddle","types":["grass","bug"]},{"id":541,"name":"swadloon","types":["grass","bug"]},{"id":542,"name":"leavanny","types":["grass","bug"]},{"id":543,"name":"venipede","types":["poison","bug"]},{"id":544,"name":"whirlipede","types":["poison","bug"]},{"id":545,"name":"scolipede","types":["poison","bug"]},{"id":546,"name":"cottonee","types":["fairy","grass"]},{"id":547,"name":"whimsicott","types":["fairy","grass"]},{"id":548,"name":"petilil","types":["grass"]},{"id":549,"name":"lilligant","types":["grass"]},{"id":550,"name":"basculin-red-striped","types":["water"]},{"id":551,"name":"sandile","types":["dark","ground"]},{"id":552,"name":"krokorok","types":["dark","ground"]},{"id":553,"name":"krookodile","types":["dark","ground"]},{"id":554,"name":"darumaka","types":["fire"]},{"id":555,"name":"darmanitan-standard","types":["fire"]},{"id":556,"name":"maractus","types":["grass"]},{"id":557,"name":"dwebble","types":["rock","bug"]},{"id":558,"name":"crustle","types":["rock","bug"]},{"id":559,"name":"scraggy","types":["fighting","dark"]},{"id":560,"name":"scrafty","types":["fighting","dark"]},{"id":561,"name":"sigilyph","types":["flying","psychic"]},{"id":562,"name":"yamask","types":["ghost"]},{"id":563,"name":"cofagrigus","types":["ghost"]},{"id":564,"name":"tirtouga","types":["rock","water"]},{"id":565,"name":"carracosta","types":["rock","water"]},{"id":566,"name":"archen","types":["flying","rock"]},{"id":567,"name":"archeops","types":["flying","rock"]},{"id":568,"name":"trubbish","types":["poison"]},{"id":569,"name":"garbodor","types":["poison"]},{"id":570,"name":"zorua","types":["dark"]},{"id":571,"name":"zoroark","types":["dark"]},{"id":572,"name":"minccino","types":["normal"]},{"id":573,"name":"cinccino","types":["normal"]},{"id":574,"name":"gothita","types":["psychic"]},{"id":575,"name":"gothorita","types":["psychic"]},{"id":576,"name":"gothitelle","types":["psychic"]},{"id":577,"name":"solosis","types":["psychic"]},{"id":578,"name":"duosion","types":["psychic"]},{"id":579,"name":"reuniclus","types":["psychic"]},{"id":580,"name":"ducklett","types":["flying","water"]},{"id":581,"name":"swanna","types":["flying","water"]},{"id":582,"name":"vanillite","types":["ice"]},{"id":583,"name":"vanillish","types":["ice"]},{"id":584,"name":"vanilluxe","types":["ice"]},{"id":585,"name":"deerling","types":["grass","normal"]},{"id":586,"name":"sawsbuck","types":["grass","normal"]},{"id":587,"name":"emolga","types":["flying","electric"]},{"id":588,"name":"karrablast","types":["bug"]},{"id":589,"name":"escavalier","types":["steel","bug"]},{"id":590,"name":"foongus","types":["poison","grass"]},{"id":591,"name":"amoonguss","types":["poison","grass"]},{"id":592,"name":"frillish","types":["ghost","water"]},{"id":593,"name":"jellicent","types":["ghost","water"]},{"id":594,"name":"alomomola","types":["water"]},{"id":595,"name":"joltik","types":["electric","bug"]},{"id":596,"name":"galvantula","types":["electric","bug"]},{"id":597,"name":"ferroseed","types":["steel","grass"]},{"id":598,"name":"ferrothorn","types":["steel","grass"]},{"id":599,"name":"klink","types":["steel"]},{"id":600,"name":"klang","types":["steel"]},{"id":601,"name":"klinklang","types":["steel"]},{"id":602,"name":"tynamo","types":["electric"]},{"id":603,"name":"eelektrik","types":["electric"]},{"id":604,"name":"eelektross","types":["electric"]},{"id":605,"name":"elgyem","types":["psychic"]},{"id":606,"name":"beheeyem","types":["psychic"]},{"id":607,"name":"litwick","types":["fire","ghost"]},{"id":608,"name":"lampent","types":["fire","ghost"]},{"id":609,"name":"chandelure","types":["fire","ghost"]},{"id":610,"name":"axew","types":["dragon"]},{"id":611,"name":"fraxure","types":["dragon"]},{"id":612,"name":"haxorus","types":["dragon"]},{"id":613,"name":"cubchoo","types":["ice"]},{"id":614,"name":"beartic","types":["ice"]},{"id":615,"name":"cryogonal","types":["ice"]},{"id":616,"name":"shelmet","types":["bug"]},{"id":617,"name":"accelgor","types":["bug"]},{"id":618,"name":"stunfisk","types":["electric","ground"]},{"id":619,"name":"mienfoo","types":["fighting"]},{"id":620,"name":"mienshao","types":["fighting"]},{"id":621,"name":"druddigon","types":["dragon"]},{"id":622,"name":"golett","types":["ghost","ground"]},{"id":623,"name":"golurk","types":["ghost","ground"]},{"id":624,"name":"pawniard","types":["steel","dark"]},{"id":625,"name":"bisharp","types":["steel","dark"]},{"id":626,"name":"bouffalant","types":["normal"]},{"id":627,"name":"rufflet","types":["flying","normal"]},{"id":628,"name":"braviary","types":["flying","normal"]},{"id":629,"name":"vullaby","types":["flying","dark"]},{"id":630,"name":"mandibuzz","types":["flying","dark"]},{"id":631,"name":"heatmor","types":["fire"]},{"id":632,"name":"durant","types":["steel","bug"]},{"id":633,"name":"deino","types":["dragon","dark"]},{"id":634,"name":"zweilous","types":["dragon","dark"]},{"id":635,"name":"hydreigon","types":["dragon","dark"]},{"id":636,"name":"larvesta","types":["fire","bug"]},{"id":637,"name":"volcarona","types":["fire","bug"]},{"id":638,"name":"cobalion","types":["fighting","steel"]},{"id":639,"name":"terrakion","types":["fighting","rock"]},{"id":640,"name":"virizion","types":["fighting","grass"]},{"id":641,"name":"tornadus-incarnate","types":["flying"]},{"id":642,"name":"thundurus-incarnate","types":["flying","electric"]},{"id":643,"name":"reshiram","types":["fire","dragon"]},{"id":644,"name":"zekrom","types":["electric","dragon"]},{"id":645,"name":"landorus-incarnate","types":["flying","ground"]},{"id":646,"name":"kyurem","types":["ice","dragon"]},{"id":647,"name":"keldeo-ordinary","types":["fighting","water"]},{"id":648,"name":"meloetta-aria","types":["psychic","normal"]},{"id":649,"name":"genesect","types":["steel","bug"]},{"id":650,"name":"chespin","types":["grass"]},{"id":651,"name":"quilladin","types":["grass"]},{"id":652,"name":"chesnaught","types":["fighting","grass"]},{"id":653,"name":"fennekin","types":["fire"]},{"id":654,"name":"braixen","types":["fire"]},{"id":655,"name":"delphox","types":["psychic","fire"]},{"id":656,"name":"froakie","types":["water"]},{"id":657,"name":"frogadier","types":["water"]},{"id":658,"name":"greninja","types":["dark","water"]},{"id":659,"name":"bunnelby","types":["normal"]},{"id":660,"name":"diggersby","types":["ground","normal"]},{"id":661,"name":"fletchling","types":["flying","normal"]},{"id":662,"name":"fletchinder","types":["flying","fire"]},{"id":663,"name":"talonflame","types":["flying","fire"]},{"id":664,"name":"scatterbug","types":["bug"]},{"id":665,"name":"spewpa","types":["bug"]},{"id":666,"name":"vivillon","types":["flying","bug"]},{"id":667,"name":"litleo","types":["normal","fire"]},{"id":668,"name":"pyroar","types":["normal","fire"]},{"id":669,"name":"flabebe","types":["fairy"]},{"id":670,"name":"floette","types":["fairy"]},{"id":671,"name":"florges","types":["fairy"]},{"id":672,"name":"skiddo","types":["grass"]},{"id":673,"name":"gogoat","types":["grass"]},{"id":674,"name":"pancham","types":["fighting"]},{"id":675,"name":"pangoro","types":["dark","fighting"]},{"id":676,"name":"furfrou","types":["normal"]},{"id":677,"name":"espurr","types":["psychic"]},{"id":678,"name":"meowstic-male","types":["psychic"]},{"id":679,"name":"honedge","types":["ghost","steel"]},{"id":680,"name":"doublade","types":["ghost","steel"]},{"id":681,"name":"aegislash-shield","types":["ghost","steel"]},{"id":682,"name":"spritzee","types":["fairy"]},{"id":683,"name":"aromatisse","types":["fairy"]},{"id":684,"name":"swirlix","types":["fairy"]},{"id":685,"name":"slurpuff","types":["fairy"]},{"id":686,"name":"inkay","types":["psychic","dark"]},{"id":687,"name":"malamar","types":["psychic","dark"]},{"id":688,"name":"binacle","types":["water","rock"]},{"id":689,"name":"barbaracle","types":["water","rock"]},{"id":690,"name":"skrelp","types":["water","poison"]},{"id":691,"name":"dragalge","types":["dragon","poison"]},{"id":692,"name":"clauncher","types":["water"]},{"id":693,"name":"clawitzer","types":["water"]},{"id":694,"name":"helioptile","types":["normal","electric"]},{"id":695,"name":"heliolisk","types":["normal","electric"]},{"id":696,"name":"tyrunt","types":["dragon","rock"]},{"id":697,"name":"tyrantrum","types":["dragon","rock"]},{"id":698,"name":"amaura","types":["ice","rock"]},{"id":699,"name":"aurorus","types":["ice","rock"]},{"id":700,"name":"sylveon","types":["fairy"]},{"id":701,"name":"hawlucha","types":["flying","fighting"]},{"id":702,"name":"dedenne","types":["fairy","electric"]},{"id":703,"name":"carbink","types":["fairy","rock"]},{"id":704,"name":"goomy","types":["dragon"]},{"id":705,"name":"sliggoo","types":["dragon"]},{"id":706,"name":"goodra","types":["dragon"]},{"id":707,"name":"klefki","types":["fairy","steel"]},{"id":708,"name":"phantump","types":["grass","ghost"]},{"id":709,"name":"trevenant","types":["grass","ghost"]},{"id":710,"name":"pumpkaboo-average","types":["grass","ghost"]},{"id":711,"name":"gourgeist-average","types":["grass","ghost"]},{"id":712,"name":"bergmite","types":["ice"]},{"id":713,"name":"avalugg","types":["ice"]},{"id":714,"name":"noibat","types":["dragon","flying"]},{"id":715,"name":"noivern","types":["dragon","flying"]},{"id":716,"name":"xerneas","types":["fairy"]},{"id":717,"name":"yveltal","types":["flying","dark"]},{"id":718,"name":"zygarde","types":["ground","dragon"]},{"id":719,"name":"diancie","types":["fairy","rock"]},{"id":720,"name":"hoopa","types":["ghost","psychic"]},{"id":721,"name":"volcanion","types":["fire","water"]}];
+var nationalDex = [null, {
+    "id": 1,
+    "name": "bulbasaur",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 2,
+    "name": "ivysaur",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 3,
+    "name": "venusaur",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 4,
+    "name": "charmander",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 5,
+    "name": "charmeleon",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 6,
+    "name": "charizard",
+    "types": ["flying", "fire"],
+    "isVisible": true
+}, {
+    "id": 7,
+    "name": "squirtle",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 8,
+    "name": "wartortle",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 9,
+    "name": "blastoise",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 10,
+    "name": "caterpie",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 11,
+    "name": "metapod",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 12,
+    "name": "butterfree",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 13,
+    "name": "weedle",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 14,
+    "name": "kakuna",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 15,
+    "name": "beedrill",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 16,
+    "name": "pidgey",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 17,
+    "name": "pidgeotto",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 18,
+    "name": "pidgeot",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 19,
+    "name": "rattata",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 20,
+    "name": "raticate",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 21,
+    "name": "spearow",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 22,
+    "name": "fearow",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 23,
+    "name": "ekans",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 24,
+    "name": "arbok",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 25,
+    "name": "pikachu",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 26,
+    "name": "raichu",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 27,
+    "name": "sandshrew",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 28,
+    "name": "sandslash",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 29,
+    "name": "nidoran-f",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 30,
+    "name": "nidorina",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 31,
+    "name": "nidoqueen",
+    "types": ["ground", "poison"],
+    "isVisible": true
+}, {
+    "id": 32,
+    "name": "nidoran-m",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 33,
+    "name": "nidorino",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 34,
+    "name": "nidoking",
+    "types": ["ground", "poison"],
+    "isVisible": true
+}, {
+    "id": 35,
+    "name": "clefairy",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 36,
+    "name": "clefable",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 37,
+    "name": "vulpix",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 38,
+    "name": "ninetales",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 39,
+    "name": "jigglypuff",
+    "types": ["fairy", "normal"],
+    "isVisible": true
+}, {
+    "id": 40,
+    "name": "wigglytuff",
+    "types": ["fairy", "normal"],
+    "isVisible": true
+}, {
+    "id": 41,
+    "name": "zubat",
+    "types": ["flying", "poison"],
+    "isVisible": true
+}, {
+    "id": 42,
+    "name": "golbat",
+    "types": ["flying", "poison"],
+    "isVisible": true
+}, {
+    "id": 43,
+    "name": "oddish",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 44,
+    "name": "gloom",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 45,
+    "name": "vileplume",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 46,
+    "name": "paras",
+    "types": ["grass", "bug"],
+    "isVisible": true
+}, {
+    "id": 47,
+    "name": "parasect",
+    "types": ["grass", "bug"],
+    "isVisible": true
+}, {
+    "id": 48,
+    "name": "venonat",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 49,
+    "name": "venomoth",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 50,
+    "name": "diglett",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 51,
+    "name": "dugtrio",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 52,
+    "name": "meowth",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 53,
+    "name": "persian",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 54,
+    "name": "psyduck",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 55,
+    "name": "golduck",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 56,
+    "name": "mankey",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 57,
+    "name": "primeape",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 58,
+    "name": "growlithe",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 59,
+    "name": "arcanine",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 60,
+    "name": "poliwag",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 61,
+    "name": "poliwhirl",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 62,
+    "name": "poliwrath",
+    "types": ["fighting", "water"],
+    "isVisible": true
+}, {
+    "id": 63,
+    "name": "abra",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 64,
+    "name": "kadabra",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 65,
+    "name": "alakazam",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 66,
+    "name": "machop",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 67,
+    "name": "machoke",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 68,
+    "name": "machamp",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 69,
+    "name": "bellsprout",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 70,
+    "name": "weepinbell",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 71,
+    "name": "victreebel",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 72,
+    "name": "tentacool",
+    "types": ["poison", "water"],
+    "isVisible": true
+}, {
+    "id": 73,
+    "name": "tentacruel",
+    "types": ["poison", "water"],
+    "isVisible": true
+}, {
+    "id": 74,
+    "name": "geodude",
+    "types": ["ground", "rock"],
+    "isVisible": true
+}, {
+    "id": 75,
+    "name": "graveler",
+    "types": ["ground", "rock"],
+    "isVisible": true
+}, {
+    "id": 76,
+    "name": "golem",
+    "types": ["ground", "rock"],
+    "isVisible": true
+}, {
+    "id": 77,
+    "name": "ponyta",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 78,
+    "name": "rapidash",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 79,
+    "name": "slowpoke",
+    "types": ["psychic", "water"],
+    "isVisible": true
+}, {
+    "id": 80,
+    "name": "slowbro",
+    "types": ["psychic", "water"],
+    "isVisible": true
+}, {
+    "id": 81,
+    "name": "magnemite",
+    "types": ["steel", "electric"],
+    "isVisible": true
+}, {
+    "id": 82,
+    "name": "magneton",
+    "types": ["steel", "electric"],
+    "isVisible": true
+}, {
+    "id": 83,
+    "name": "farfetchd",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 84,
+    "name": "doduo",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 85,
+    "name": "dodrio",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 86,
+    "name": "seel",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 87,
+    "name": "dewgong",
+    "types": ["ice", "water"],
+    "isVisible": true
+}, {
+    "id": 88,
+    "name": "grimer",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 89,
+    "name": "muk",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 90,
+    "name": "shellder",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 91,
+    "name": "cloyster",
+    "types": ["ice", "water"],
+    "isVisible": true
+}, {
+    "id": 92,
+    "name": "gastly",
+    "types": ["poison", "ghost"],
+    "isVisible": true
+}, {
+    "id": 93,
+    "name": "haunter",
+    "types": ["poison", "ghost"],
+    "isVisible": true
+}, {
+    "id": 94,
+    "name": "gengar",
+    "types": ["poison", "ghost"],
+    "isVisible": true
+}, {
+    "id": 95,
+    "name": "onix",
+    "types": ["ground", "rock"],
+    "isVisible": true
+}, {
+    "id": 96,
+    "name": "drowzee",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 97,
+    "name": "hypno",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 98,
+    "name": "krabby",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 99,
+    "name": "kingler",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 100,
+    "name": "voltorb",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 101,
+    "name": "electrode",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 102,
+    "name": "exeggcute",
+    "types": ["psychic", "grass"],
+    "isVisible": true
+}, {
+    "id": 103,
+    "name": "exeggutor",
+    "types": ["psychic", "grass"],
+    "isVisible": true
+}, {
+    "id": 104,
+    "name": "cubone",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 105,
+    "name": "marowak",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 106,
+    "name": "hitmonlee",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 107,
+    "name": "hitmonchan",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 108,
+    "name": "lickitung",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 109,
+    "name": "koffing",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 110,
+    "name": "weezing",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 111,
+    "name": "rhyhorn",
+    "types": ["rock", "ground"],
+    "isVisible": true
+}, {
+    "id": 112,
+    "name": "rhydon",
+    "types": ["rock", "ground"],
+    "isVisible": true
+}, {
+    "id": 113,
+    "name": "chansey",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 114,
+    "name": "tangela",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 115,
+    "name": "kangaskhan",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 116,
+    "name": "horsea",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 117,
+    "name": "seadra",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 118,
+    "name": "goldeen",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 119,
+    "name": "seaking",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 120,
+    "name": "staryu",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 121,
+    "name": "starmie",
+    "types": ["psychic", "water"],
+    "isVisible": true
+}, {
+    "id": 122,
+    "name": "mr-mime",
+    "types": ["fairy", "psychic"],
+    "isVisible": true
+}, {
+    "id": 123,
+    "name": "scyther",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 124,
+    "name": "jynx",
+    "types": ["psychic", "ice"],
+    "isVisible": true
+}, {
+    "id": 125,
+    "name": "electabuzz",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 126,
+    "name": "magmar",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 127,
+    "name": "pinsir",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 128,
+    "name": "tauros",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 129,
+    "name": "magikarp",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 130,
+    "name": "gyarados",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 131,
+    "name": "lapras",
+    "types": ["ice", "water"],
+    "isVisible": true
+}, {
+    "id": 132,
+    "name": "ditto",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 133,
+    "name": "eevee",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 134,
+    "name": "vaporeon",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 135,
+    "name": "jolteon",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 136,
+    "name": "flareon",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 137,
+    "name": "porygon",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 138,
+    "name": "omanyte",
+    "types": ["water", "rock"],
+    "isVisible": true
+}, {
+    "id": 139,
+    "name": "omastar",
+    "types": ["water", "rock"],
+    "isVisible": true
+}, {
+    "id": 140,
+    "name": "kabuto",
+    "types": ["water", "rock"],
+    "isVisible": true
+}, {
+    "id": 141,
+    "name": "kabutops",
+    "types": ["water", "rock"],
+    "isVisible": true
+}, {
+    "id": 142,
+    "name": "aerodactyl",
+    "types": ["flying", "rock"],
+    "isVisible": true
+}, {
+    "id": 143,
+    "name": "snorlax",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 144,
+    "name": "articuno",
+    "types": ["flying", "ice"],
+    "isVisible": true
+}, {
+    "id": 145,
+    "name": "zapdos",
+    "types": ["flying", "electric"],
+    "isVisible": true
+}, {
+    "id": 146,
+    "name": "moltres",
+    "types": ["flying", "fire"],
+    "isVisible": true
+}, {
+    "id": 147,
+    "name": "dratini",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 148,
+    "name": "dragonair",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 149,
+    "name": "dragonite",
+    "types": ["flying", "dragon"],
+    "isVisible": true
+}, {
+    "id": 150,
+    "name": "mewtwo",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 151,
+    "name": "mew",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 152,
+    "name": "chikorita",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 153,
+    "name": "bayleef",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 154,
+    "name": "meganium",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 155,
+    "name": "cyndaquil",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 156,
+    "name": "quilava",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 157,
+    "name": "typhlosion",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 158,
+    "name": "totodile",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 159,
+    "name": "croconaw",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 160,
+    "name": "feraligatr",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 161,
+    "name": "sentret",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 162,
+    "name": "furret",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 163,
+    "name": "hoothoot",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 164,
+    "name": "noctowl",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 165,
+    "name": "ledyba",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 166,
+    "name": "ledian",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 167,
+    "name": "spinarak",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 168,
+    "name": "ariados",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 169,
+    "name": "crobat",
+    "types": ["flying", "poison"],
+    "isVisible": true
+}, {
+    "id": 170,
+    "name": "chinchou",
+    "types": ["electric", "water"],
+    "isVisible": true
+}, {
+    "id": 171,
+    "name": "lanturn",
+    "types": ["electric", "water"],
+    "isVisible": true
+}, {
+    "id": 172,
+    "name": "pichu",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 173,
+    "name": "cleffa",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 174,
+    "name": "igglybuff",
+    "types": ["fairy", "normal"],
+    "isVisible": true
+}, {
+    "id": 175,
+    "name": "togepi",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 176,
+    "name": "togetic",
+    "types": ["flying", "fairy"],
+    "isVisible": true
+}, {
+    "id": 177,
+    "name": "natu",
+    "types": ["flying", "psychic"],
+    "isVisible": true
+}, {
+    "id": 178,
+    "name": "xatu",
+    "types": ["flying", "psychic"],
+    "isVisible": true
+}, {
+    "id": 179,
+    "name": "mareep",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 180,
+    "name": "flaaffy",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 181,
+    "name": "ampharos",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 182,
+    "name": "bellossom",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 183,
+    "name": "marill",
+    "types": ["fairy", "water"],
+    "isVisible": true
+}, {
+    "id": 184,
+    "name": "azumarill",
+    "types": ["fairy", "water"],
+    "isVisible": true
+}, {
+    "id": 185,
+    "name": "sudowoodo",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 186,
+    "name": "politoed",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 187,
+    "name": "hoppip",
+    "types": ["flying", "grass"],
+    "isVisible": true
+}, {
+    "id": 188,
+    "name": "skiploom",
+    "types": ["flying", "grass"],
+    "isVisible": true
+}, {
+    "id": 189,
+    "name": "jumpluff",
+    "types": ["flying", "grass"],
+    "isVisible": true
+}, {
+    "id": 190,
+    "name": "aipom",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 191,
+    "name": "sunkern",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 192,
+    "name": "sunflora",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 193,
+    "name": "yanma",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 194,
+    "name": "wooper",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 195,
+    "name": "quagsire",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 196,
+    "name": "espeon",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 197,
+    "name": "umbreon",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 198,
+    "name": "murkrow",
+    "types": ["flying", "dark"],
+    "isVisible": true
+}, {
+    "id": 199,
+    "name": "slowking",
+    "types": ["psychic", "water"],
+    "isVisible": true
+}, {
+    "id": 200,
+    "name": "misdreavus",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 201,
+    "name": "unown",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 202,
+    "name": "wobbuffet",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 203,
+    "name": "girafarig",
+    "types": ["psychic", "normal"],
+    "isVisible": true
+}, {
+    "id": 204,
+    "name": "pineco",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 205,
+    "name": "forretress",
+    "types": ["steel", "bug"],
+    "isVisible": true
+}, {
+    "id": 206,
+    "name": "dunsparce",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 207,
+    "name": "gligar",
+    "types": ["flying", "ground"],
+    "isVisible": true
+}, {
+    "id": 208,
+    "name": "steelix",
+    "types": ["ground", "steel"],
+    "isVisible": true
+}, {
+    "id": 209,
+    "name": "snubbull",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 210,
+    "name": "granbull",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 211,
+    "name": "qwilfish",
+    "types": ["poison", "water"],
+    "isVisible": true
+}, {
+    "id": 212,
+    "name": "scizor",
+    "types": ["steel", "bug"],
+    "isVisible": true
+}, {
+    "id": 213,
+    "name": "shuckle",
+    "types": ["rock", "bug"],
+    "isVisible": true
+}, {
+    "id": 214,
+    "name": "heracross",
+    "types": ["fighting", "bug"],
+    "isVisible": true
+}, {
+    "id": 215,
+    "name": "sneasel",
+    "types": ["ice", "dark"],
+    "isVisible": true
+}, {
+    "id": 216,
+    "name": "teddiursa",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 217,
+    "name": "ursaring",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 218,
+    "name": "slugma",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 219,
+    "name": "magcargo",
+    "types": ["rock", "fire"],
+    "isVisible": true
+}, {
+    "id": 220,
+    "name": "swinub",
+    "types": ["ground", "ice"],
+    "isVisible": true
+}, {
+    "id": 221,
+    "name": "piloswine",
+    "types": ["ground", "ice"],
+    "isVisible": true
+}, {
+    "id": 222,
+    "name": "corsola",
+    "types": ["rock", "water"],
+    "isVisible": true
+}, {
+    "id": 223,
+    "name": "remoraid",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 224,
+    "name": "octillery",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 225,
+    "name": "delibird",
+    "types": ["flying", "ice"],
+    "isVisible": true
+}, {
+    "id": 226,
+    "name": "mantine",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 227,
+    "name": "skarmory",
+    "types": ["flying", "steel"],
+    "isVisible": true
+}, {
+    "id": 228,
+    "name": "houndour",
+    "types": ["fire", "dark"],
+    "isVisible": true
+}, {
+    "id": 229,
+    "name": "houndoom",
+    "types": ["fire", "dark"],
+    "isVisible": true
+}, {
+    "id": 230,
+    "name": "kingdra",
+    "types": ["dragon", "water"],
+    "isVisible": true
+}, {
+    "id": 231,
+    "name": "phanpy",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 232,
+    "name": "donphan",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 233,
+    "name": "porygon2",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 234,
+    "name": "stantler",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 235,
+    "name": "smeargle",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 236,
+    "name": "tyrogue",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 237,
+    "name": "hitmontop",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 238,
+    "name": "smoochum",
+    "types": ["psychic", "ice"],
+    "isVisible": true
+}, {
+    "id": 239,
+    "name": "elekid",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 240,
+    "name": "magby",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 241,
+    "name": "miltank",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 242,
+    "name": "blissey",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 243,
+    "name": "raikou",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 244,
+    "name": "entei",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 245,
+    "name": "suicune",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 246,
+    "name": "larvitar",
+    "types": ["ground", "rock"],
+    "isVisible": true
+}, {
+    "id": 247,
+    "name": "pupitar",
+    "types": ["ground", "rock"],
+    "isVisible": true
+}, {
+    "id": 248,
+    "name": "tyranitar",
+    "types": ["dark", "rock"],
+    "isVisible": true
+}, {
+    "id": 249,
+    "name": "lugia",
+    "types": ["flying", "psychic"],
+    "isVisible": true
+}, {
+    "id": 250,
+    "name": "ho-oh",
+    "types": ["flying", "fire"],
+    "isVisible": true
+}, {
+    "id": 251,
+    "name": "celebi",
+    "types": ["grass", "psychic"],
+    "isVisible": true
+}, {
+    "id": 252,
+    "name": "treecko",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 253,
+    "name": "grovyle",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 254,
+    "name": "sceptile",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 255,
+    "name": "torchic",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 256,
+    "name": "combusken",
+    "types": ["fighting", "fire"],
+    "isVisible": true
+}, {
+    "id": 257,
+    "name": "blaziken",
+    "types": ["fighting", "fire"],
+    "isVisible": true
+}, {
+    "id": 258,
+    "name": "mudkip",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 259,
+    "name": "marshtomp",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 260,
+    "name": "swampert",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 261,
+    "name": "poochyena",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 262,
+    "name": "mightyena",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 263,
+    "name": "zigzagoon",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 264,
+    "name": "linoone",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 265,
+    "name": "wurmple",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 266,
+    "name": "silcoon",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 267,
+    "name": "beautifly",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 268,
+    "name": "cascoon",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 269,
+    "name": "dustox",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 270,
+    "name": "lotad",
+    "types": ["grass", "water"],
+    "isVisible": true
+}, {
+    "id": 271,
+    "name": "lombre",
+    "types": ["grass", "water"],
+    "isVisible": true
+}, {
+    "id": 272,
+    "name": "ludicolo",
+    "types": ["grass", "water"],
+    "isVisible": true
+}, {
+    "id": 273,
+    "name": "seedot",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 274,
+    "name": "nuzleaf",
+    "types": ["dark", "grass"],
+    "isVisible": true
+}, {
+    "id": 275,
+    "name": "shiftry",
+    "types": ["dark", "grass"],
+    "isVisible": true
+}, {
+    "id": 276,
+    "name": "taillow",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 277,
+    "name": "swellow",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 278,
+    "name": "wingull",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 279,
+    "name": "pelipper",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 280,
+    "name": "ralts",
+    "types": ["fairy", "psychic"],
+    "isVisible": true
+}, {
+    "id": 281,
+    "name": "kirlia",
+    "types": ["fairy", "psychic"],
+    "isVisible": true
+}, {
+    "id": 282,
+    "name": "gardevoir",
+    "types": ["fairy", "psychic"],
+    "isVisible": true
+}, {
+    "id": 283,
+    "name": "surskit",
+    "types": ["water", "bug"],
+    "isVisible": true
+}, {
+    "id": 284,
+    "name": "masquerain",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 285,
+    "name": "shroomish",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 286,
+    "name": "breloom",
+    "types": ["fighting", "grass"],
+    "isVisible": true
+}, {
+    "id": 287,
+    "name": "slakoth",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 288,
+    "name": "vigoroth",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 289,
+    "name": "slaking",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 290,
+    "name": "nincada",
+    "types": ["ground", "bug"],
+    "isVisible": true
+}, {
+    "id": 291,
+    "name": "ninjask",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 292,
+    "name": "shedinja",
+    "types": ["ghost", "bug"],
+    "isVisible": true
+}, {
+    "id": 293,
+    "name": "whismur",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 294,
+    "name": "loudred",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 295,
+    "name": "exploud",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 296,
+    "name": "makuhita",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 297,
+    "name": "hariyama",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 298,
+    "name": "azurill",
+    "types": ["fairy", "normal"],
+    "isVisible": true
+}, {
+    "id": 299,
+    "name": "nosepass",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 300,
+    "name": "skitty",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 301,
+    "name": "delcatty",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 302,
+    "name": "sableye",
+    "types": ["ghost", "dark"],
+    "isVisible": true
+}, {
+    "id": 303,
+    "name": "mawile",
+    "types": ["fairy", "steel"],
+    "isVisible": true
+}, {
+    "id": 304,
+    "name": "aron",
+    "types": ["rock", "steel"],
+    "isVisible": true
+}, {
+    "id": 305,
+    "name": "lairon",
+    "types": ["rock", "steel"],
+    "isVisible": true
+}, {
+    "id": 306,
+    "name": "aggron",
+    "types": ["rock", "steel"],
+    "isVisible": true
+}, {
+    "id": 307,
+    "name": "meditite",
+    "types": ["psychic", "fighting"],
+    "isVisible": true
+}, {
+    "id": 308,
+    "name": "medicham",
+    "types": ["psychic", "fighting"],
+    "isVisible": true
+}, {
+    "id": 309,
+    "name": "electrike",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 310,
+    "name": "manectric",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 311,
+    "name": "plusle",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 312,
+    "name": "minun",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 313,
+    "name": "volbeat",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 314,
+    "name": "illumise",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 315,
+    "name": "roselia",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 316,
+    "name": "gulpin",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 317,
+    "name": "swalot",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 318,
+    "name": "carvanha",
+    "types": ["dark", "water"],
+    "isVisible": true
+}, {
+    "id": 319,
+    "name": "sharpedo",
+    "types": ["dark", "water"],
+    "isVisible": true
+}, {
+    "id": 320,
+    "name": "wailmer",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 321,
+    "name": "wailord",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 322,
+    "name": "numel",
+    "types": ["ground", "fire"],
+    "isVisible": true
+}, {
+    "id": 323,
+    "name": "camerupt",
+    "types": ["ground", "fire"],
+    "isVisible": true
+}, {
+    "id": 324,
+    "name": "torkoal",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 325,
+    "name": "spoink",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 326,
+    "name": "grumpig",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 327,
+    "name": "spinda",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 328,
+    "name": "trapinch",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 329,
+    "name": "vibrava",
+    "types": ["dragon", "ground"],
+    "isVisible": true
+}, {
+    "id": 330,
+    "name": "flygon",
+    "types": ["dragon", "ground"],
+    "isVisible": true
+}, {
+    "id": 331,
+    "name": "cacnea",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 332,
+    "name": "cacturne",
+    "types": ["dark", "grass"],
+    "isVisible": true
+}, {
+    "id": 333,
+    "name": "swablu",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 334,
+    "name": "altaria",
+    "types": ["flying", "dragon"],
+    "isVisible": true
+}, {
+    "id": 335,
+    "name": "zangoose",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 336,
+    "name": "seviper",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 337,
+    "name": "lunatone",
+    "types": ["psychic", "rock"],
+    "isVisible": true
+}, {
+    "id": 338,
+    "name": "solrock",
+    "types": ["psychic", "rock"],
+    "isVisible": true
+}, {
+    "id": 339,
+    "name": "barboach",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 340,
+    "name": "whiscash",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 341,
+    "name": "corphish",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 342,
+    "name": "crawdaunt",
+    "types": ["dark", "water"],
+    "isVisible": true
+}, {
+    "id": 343,
+    "name": "baltoy",
+    "types": ["psychic", "ground"],
+    "isVisible": true
+}, {
+    "id": 344,
+    "name": "claydol",
+    "types": ["psychic", "ground"],
+    "isVisible": true
+}, {
+    "id": 345,
+    "name": "lileep",
+    "types": ["grass", "rock"],
+    "isVisible": true
+}, {
+    "id": 346,
+    "name": "cradily",
+    "types": ["grass", "rock"],
+    "isVisible": true
+}, {
+    "id": 347,
+    "name": "anorith",
+    "types": ["bug", "rock"],
+    "isVisible": true
+}, {
+    "id": 348,
+    "name": "armaldo",
+    "types": ["bug", "rock"],
+    "isVisible": true
+}, {
+    "id": 349,
+    "name": "feebas",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 350,
+    "name": "milotic",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 351,
+    "name": "castform",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 352,
+    "name": "kecleon",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 353,
+    "name": "shuppet",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 354,
+    "name": "banette",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 355,
+    "name": "duskull",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 356,
+    "name": "dusclops",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 357,
+    "name": "tropius",
+    "types": ["flying", "grass"],
+    "isVisible": true
+}, {
+    "id": 358,
+    "name": "chimecho",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 359,
+    "name": "absol",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 360,
+    "name": "wynaut",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 361,
+    "name": "snorunt",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 362,
+    "name": "glalie",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 363,
+    "name": "spheal",
+    "types": ["water", "ice"],
+    "isVisible": true
+}, {
+    "id": 364,
+    "name": "sealeo",
+    "types": ["water", "ice"],
+    "isVisible": true
+}, {
+    "id": 365,
+    "name": "walrein",
+    "types": ["water", "ice"],
+    "isVisible": true
+}, {
+    "id": 366,
+    "name": "clamperl",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 367,
+    "name": "huntail",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 368,
+    "name": "gorebyss",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 369,
+    "name": "relicanth",
+    "types": ["rock", "water"],
+    "isVisible": true
+}, {
+    "id": 370,
+    "name": "luvdisc",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 371,
+    "name": "bagon",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 372,
+    "name": "shelgon",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 373,
+    "name": "salamence",
+    "types": ["flying", "dragon"],
+    "isVisible": true
+}, {
+    "id": 374,
+    "name": "beldum",
+    "types": ["psychic", "steel"],
+    "isVisible": true
+}, {
+    "id": 375,
+    "name": "metang",
+    "types": ["psychic", "steel"],
+    "isVisible": true
+}, {
+    "id": 376,
+    "name": "metagross",
+    "types": ["psychic", "steel"],
+    "isVisible": true
+}, {
+    "id": 377,
+    "name": "regirock",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 378,
+    "name": "regice",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 379,
+    "name": "registeel",
+    "types": ["steel"],
+    "isVisible": true
+}, {
+    "id": 380,
+    "name": "latias",
+    "types": ["psychic", "dragon"],
+    "isVisible": true
+}, {
+    "id": 381,
+    "name": "latios",
+    "types": ["psychic", "dragon"],
+    "isVisible": true
+}, {
+    "id": 382,
+    "name": "kyogre",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 383,
+    "name": "groudon",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 384,
+    "name": "rayquaza",
+    "types": ["flying", "dragon"],
+    "isVisible": true
+}, {
+    "id": 385,
+    "name": "jirachi",
+    "types": ["psychic", "steel"],
+    "isVisible": true
+}, {
+    "id": 386,
+    "name": "deoxys-normal",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 387,
+    "name": "turtwig",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 388,
+    "name": "grotle",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 389,
+    "name": "torterra",
+    "types": ["ground", "grass"],
+    "isVisible": true
+}, {
+    "id": 390,
+    "name": "chimchar",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 391,
+    "name": "monferno",
+    "types": ["fighting", "fire"],
+    "isVisible": true
+}, {
+    "id": 392,
+    "name": "infernape",
+    "types": ["fighting", "fire"],
+    "isVisible": true
+}, {
+    "id": 393,
+    "name": "piplup",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 394,
+    "name": "prinplup",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 395,
+    "name": "empoleon",
+    "types": ["steel", "water"],
+    "isVisible": true
+}, {
+    "id": 396,
+    "name": "starly",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 397,
+    "name": "staravia",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 398,
+    "name": "staraptor",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 399,
+    "name": "bidoof",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 400,
+    "name": "bibarel",
+    "types": ["water", "normal"],
+    "isVisible": true
+}, {
+    "id": 401,
+    "name": "kricketot",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 402,
+    "name": "kricketune",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 403,
+    "name": "shinx",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 404,
+    "name": "luxio",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 405,
+    "name": "luxray",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 406,
+    "name": "budew",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 407,
+    "name": "roserade",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 408,
+    "name": "cranidos",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 409,
+    "name": "rampardos",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 410,
+    "name": "shieldon",
+    "types": ["steel", "rock"],
+    "isVisible": true
+}, {
+    "id": 411,
+    "name": "bastiodon",
+    "types": ["steel", "rock"],
+    "isVisible": true
+}, {
+    "id": 412,
+    "name": "burmy",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 413,
+    "name": "wormadam-plant",
+    "types": ["grass", "bug"],
+    "isVisible": true
+}, {
+    "id": 414,
+    "name": "mothim",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 415,
+    "name": "combee",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 416,
+    "name": "vespiquen",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 417,
+    "name": "pachirisu",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 418,
+    "name": "buizel",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 419,
+    "name": "floatzel",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 420,
+    "name": "cherubi",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 421,
+    "name": "cherrim",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 422,
+    "name": "shellos",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 423,
+    "name": "gastrodon",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 424,
+    "name": "ambipom",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 425,
+    "name": "drifloon",
+    "types": ["flying", "ghost"],
+    "isVisible": true
+}, {
+    "id": 426,
+    "name": "drifblim",
+    "types": ["flying", "ghost"],
+    "isVisible": true
+}, {
+    "id": 427,
+    "name": "buneary",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 428,
+    "name": "lopunny",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 429,
+    "name": "mismagius",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 430,
+    "name": "honchkrow",
+    "types": ["flying", "dark"],
+    "isVisible": true
+}, {
+    "id": 431,
+    "name": "glameow",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 432,
+    "name": "purugly",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 433,
+    "name": "chingling",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 434,
+    "name": "stunky",
+    "types": ["dark", "poison"],
+    "isVisible": true
+}, {
+    "id": 435,
+    "name": "skuntank",
+    "types": ["dark", "poison"],
+    "isVisible": true
+}, {
+    "id": 436,
+    "name": "bronzor",
+    "types": ["psychic", "steel"],
+    "isVisible": true
+}, {
+    "id": 437,
+    "name": "bronzong",
+    "types": ["psychic", "steel"],
+    "isVisible": true
+}, {
+    "id": 438,
+    "name": "bonsly",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 439,
+    "name": "mime-jr",
+    "types": ["fairy", "psychic"],
+    "isVisible": true
+}, {
+    "id": 440,
+    "name": "happiny",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 441,
+    "name": "chatot",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 442,
+    "name": "spiritomb",
+    "types": ["dark", "ghost"],
+    "isVisible": true
+}, {
+    "id": 443,
+    "name": "gible",
+    "types": ["ground", "dragon"],
+    "isVisible": true
+}, {
+    "id": 444,
+    "name": "gabite",
+    "types": ["ground", "dragon"],
+    "isVisible": true
+}, {
+    "id": 445,
+    "name": "garchomp",
+    "types": ["ground", "dragon"],
+    "isVisible": true
+}, {
+    "id": 446,
+    "name": "munchlax",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 447,
+    "name": "riolu",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 448,
+    "name": "lucario",
+    "types": ["steel", "fighting"],
+    "isVisible": true
+}, {
+    "id": 449,
+    "name": "hippopotas",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 450,
+    "name": "hippowdon",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 451,
+    "name": "skorupi",
+    "types": ["bug", "poison"],
+    "isVisible": true
+}, {
+    "id": 452,
+    "name": "drapion",
+    "types": ["dark", "poison"],
+    "isVisible": true
+}, {
+    "id": 453,
+    "name": "croagunk",
+    "types": ["fighting", "poison"],
+    "isVisible": true
+}, {
+    "id": 454,
+    "name": "toxicroak",
+    "types": ["fighting", "poison"],
+    "isVisible": true
+}, {
+    "id": 455,
+    "name": "carnivine",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 456,
+    "name": "finneon",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 457,
+    "name": "lumineon",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 458,
+    "name": "mantyke",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 459,
+    "name": "snover",
+    "types": ["ice", "grass"],
+    "isVisible": true
+}, {
+    "id": 460,
+    "name": "abomasnow",
+    "types": ["ice", "grass"],
+    "isVisible": true
+}, {
+    "id": 461,
+    "name": "weavile",
+    "types": ["ice", "dark"],
+    "isVisible": true
+}, {
+    "id": 462,
+    "name": "magnezone",
+    "types": ["steel", "electric"],
+    "isVisible": true
+}, {
+    "id": 463,
+    "name": "lickilicky",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 464,
+    "name": "rhyperior",
+    "types": ["rock", "ground"],
+    "isVisible": true
+}, {
+    "id": 465,
+    "name": "tangrowth",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 466,
+    "name": "electivire",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 467,
+    "name": "magmortar",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 468,
+    "name": "togekiss",
+    "types": ["flying", "fairy"],
+    "isVisible": true
+}, {
+    "id": 469,
+    "name": "yanmega",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 470,
+    "name": "leafeon",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 471,
+    "name": "glaceon",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 472,
+    "name": "gliscor",
+    "types": ["flying", "ground"],
+    "isVisible": true
+}, {
+    "id": 473,
+    "name": "mamoswine",
+    "types": ["ground", "ice"],
+    "isVisible": true
+}, {
+    "id": 474,
+    "name": "porygon-z",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 475,
+    "name": "gallade",
+    "types": ["fighting", "psychic"],
+    "isVisible": true
+}, {
+    "id": 476,
+    "name": "probopass",
+    "types": ["steel", "rock"],
+    "isVisible": true
+}, {
+    "id": 477,
+    "name": "dusknoir",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 478,
+    "name": "froslass",
+    "types": ["ghost", "ice"],
+    "isVisible": true
+}, {
+    "id": 479,
+    "name": "rotom",
+    "types": ["ghost", "electric"],
+    "isVisible": true
+}, {
+    "id": 480,
+    "name": "uxie",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 481,
+    "name": "mesprit",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 482,
+    "name": "azelf",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 483,
+    "name": "dialga",
+    "types": ["dragon", "steel"],
+    "isVisible": true
+}, {
+    "id": 484,
+    "name": "palkia",
+    "types": ["dragon", "water"],
+    "isVisible": true
+}, {
+    "id": 485,
+    "name": "heatran",
+    "types": ["steel", "fire"],
+    "isVisible": true
+}, {
+    "id": 486,
+    "name": "regigigas",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 487,
+    "name": "giratina-altered",
+    "types": ["dragon", "ghost"],
+    "isVisible": true
+}, {
+    "id": 488,
+    "name": "cresselia",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 489,
+    "name": "phione",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 490,
+    "name": "manaphy",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 491,
+    "name": "darkrai",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 492,
+    "name": "shaymin-land",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 493,
+    "name": "arceus",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 494,
+    "name": "victini",
+    "types": ["fire", "psychic"],
+    "isVisible": true
+}, {
+    "id": 495,
+    "name": "snivy",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 496,
+    "name": "servine",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 497,
+    "name": "serperior",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 498,
+    "name": "tepig",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 499,
+    "name": "pignite",
+    "types": ["fighting", "fire"],
+    "isVisible": true
+}, {
+    "id": 500,
+    "name": "emboar",
+    "types": ["fighting", "fire"],
+    "isVisible": true
+}, {
+    "id": 501,
+    "name": "oshawott",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 502,
+    "name": "dewott",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 503,
+    "name": "samurott",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 504,
+    "name": "patrat",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 505,
+    "name": "watchog",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 506,
+    "name": "lillipup",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 507,
+    "name": "herdier",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 508,
+    "name": "stoutland",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 509,
+    "name": "purrloin",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 510,
+    "name": "liepard",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 511,
+    "name": "pansage",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 512,
+    "name": "simisage",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 513,
+    "name": "pansear",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 514,
+    "name": "simisear",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 515,
+    "name": "panpour",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 516,
+    "name": "simipour",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 517,
+    "name": "munna",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 518,
+    "name": "musharna",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 519,
+    "name": "pidove",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 520,
+    "name": "tranquill",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 521,
+    "name": "unfezant",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 522,
+    "name": "blitzle",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 523,
+    "name": "zebstrika",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 524,
+    "name": "roggenrola",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 525,
+    "name": "boldore",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 526,
+    "name": "gigalith",
+    "types": ["rock"],
+    "isVisible": true
+}, {
+    "id": 527,
+    "name": "woobat",
+    "types": ["flying", "psychic"],
+    "isVisible": true
+}, {
+    "id": 528,
+    "name": "swoobat",
+    "types": ["flying", "psychic"],
+    "isVisible": true
+}, {
+    "id": 529,
+    "name": "drilbur",
+    "types": ["ground"],
+    "isVisible": true
+}, {
+    "id": 530,
+    "name": "excadrill",
+    "types": ["steel", "ground"],
+    "isVisible": true
+}, {
+    "id": 531,
+    "name": "audino",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 532,
+    "name": "timburr",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 533,
+    "name": "gurdurr",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 534,
+    "name": "conkeldurr",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 535,
+    "name": "tympole",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 536,
+    "name": "palpitoad",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 537,
+    "name": "seismitoad",
+    "types": ["ground", "water"],
+    "isVisible": true
+}, {
+    "id": 538,
+    "name": "throh",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 539,
+    "name": "sawk",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 540,
+    "name": "sewaddle",
+    "types": ["grass", "bug"],
+    "isVisible": true
+}, {
+    "id": 541,
+    "name": "swadloon",
+    "types": ["grass", "bug"],
+    "isVisible": true
+}, {
+    "id": 542,
+    "name": "leavanny",
+    "types": ["grass", "bug"],
+    "isVisible": true
+}, {
+    "id": 543,
+    "name": "venipede",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 544,
+    "name": "whirlipede",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 545,
+    "name": "scolipede",
+    "types": ["poison", "bug"],
+    "isVisible": true
+}, {
+    "id": 546,
+    "name": "cottonee",
+    "types": ["fairy", "grass"],
+    "isVisible": true
+}, {
+    "id": 547,
+    "name": "whimsicott",
+    "types": ["fairy", "grass"],
+    "isVisible": true
+}, {
+    "id": 548,
+    "name": "petilil",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 549,
+    "name": "lilligant",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 550,
+    "name": "basculin-red-striped",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 551,
+    "name": "sandile",
+    "types": ["dark", "ground"],
+    "isVisible": true
+}, {
+    "id": 552,
+    "name": "krokorok",
+    "types": ["dark", "ground"],
+    "isVisible": true
+}, {
+    "id": 553,
+    "name": "krookodile",
+    "types": ["dark", "ground"],
+    "isVisible": true
+}, {
+    "id": 554,
+    "name": "darumaka",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 555,
+    "name": "darmanitan-standard",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 556,
+    "name": "maractus",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 557,
+    "name": "dwebble",
+    "types": ["rock", "bug"],
+    "isVisible": true
+}, {
+    "id": 558,
+    "name": "crustle",
+    "types": ["rock", "bug"],
+    "isVisible": true
+}, {
+    "id": 559,
+    "name": "scraggy",
+    "types": ["fighting", "dark"],
+    "isVisible": true
+}, {
+    "id": 560,
+    "name": "scrafty",
+    "types": ["fighting", "dark"],
+    "isVisible": true
+}, {
+    "id": 561,
+    "name": "sigilyph",
+    "types": ["flying", "psychic"],
+    "isVisible": true
+}, {
+    "id": 562,
+    "name": "yamask",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 563,
+    "name": "cofagrigus",
+    "types": ["ghost"],
+    "isVisible": true
+}, {
+    "id": 564,
+    "name": "tirtouga",
+    "types": ["rock", "water"],
+    "isVisible": true
+}, {
+    "id": 565,
+    "name": "carracosta",
+    "types": ["rock", "water"],
+    "isVisible": true
+}, {
+    "id": 566,
+    "name": "archen",
+    "types": ["flying", "rock"],
+    "isVisible": true
+}, {
+    "id": 567,
+    "name": "archeops",
+    "types": ["flying", "rock"],
+    "isVisible": true
+}, {
+    "id": 568,
+    "name": "trubbish",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 569,
+    "name": "garbodor",
+    "types": ["poison"],
+    "isVisible": true
+}, {
+    "id": 570,
+    "name": "zorua",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 571,
+    "name": "zoroark",
+    "types": ["dark"],
+    "isVisible": true
+}, {
+    "id": 572,
+    "name": "minccino",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 573,
+    "name": "cinccino",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 574,
+    "name": "gothita",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 575,
+    "name": "gothorita",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 576,
+    "name": "gothitelle",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 577,
+    "name": "solosis",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 578,
+    "name": "duosion",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 579,
+    "name": "reuniclus",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 580,
+    "name": "ducklett",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 581,
+    "name": "swanna",
+    "types": ["flying", "water"],
+    "isVisible": true
+}, {
+    "id": 582,
+    "name": "vanillite",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 583,
+    "name": "vanillish",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 584,
+    "name": "vanilluxe",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 585,
+    "name": "deerling",
+    "types": ["grass", "normal"],
+    "isVisible": true
+}, {
+    "id": 586,
+    "name": "sawsbuck",
+    "types": ["grass", "normal"],
+    "isVisible": true
+}, {
+    "id": 587,
+    "name": "emolga",
+    "types": ["flying", "electric"],
+    "isVisible": true
+}, {
+    "id": 588,
+    "name": "karrablast",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 589,
+    "name": "escavalier",
+    "types": ["steel", "bug"],
+    "isVisible": true
+}, {
+    "id": 590,
+    "name": "foongus",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 591,
+    "name": "amoonguss",
+    "types": ["poison", "grass"],
+    "isVisible": true
+}, {
+    "id": 592,
+    "name": "frillish",
+    "types": ["ghost", "water"],
+    "isVisible": true
+}, {
+    "id": 593,
+    "name": "jellicent",
+    "types": ["ghost", "water"],
+    "isVisible": true
+}, {
+    "id": 594,
+    "name": "alomomola",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 595,
+    "name": "joltik",
+    "types": ["electric", "bug"],
+    "isVisible": true
+}, {
+    "id": 596,
+    "name": "galvantula",
+    "types": ["electric", "bug"],
+    "isVisible": true
+}, {
+    "id": 597,
+    "name": "ferroseed",
+    "types": ["steel", "grass"],
+    "isVisible": true
+}, {
+    "id": 598,
+    "name": "ferrothorn",
+    "types": ["steel", "grass"],
+    "isVisible": true
+}, {
+    "id": 599,
+    "name": "klink",
+    "types": ["steel"],
+    "isVisible": true
+}, {
+    "id": 600,
+    "name": "klang",
+    "types": ["steel"],
+    "isVisible": true
+}, {
+    "id": 601,
+    "name": "klinklang",
+    "types": ["steel"],
+    "isVisible": true
+}, {
+    "id": 602,
+    "name": "tynamo",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 603,
+    "name": "eelektrik",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 604,
+    "name": "eelektross",
+    "types": ["electric"],
+    "isVisible": true
+}, {
+    "id": 605,
+    "name": "elgyem",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 606,
+    "name": "beheeyem",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 607,
+    "name": "litwick",
+    "types": ["fire", "ghost"],
+    "isVisible": true
+}, {
+    "id": 608,
+    "name": "lampent",
+    "types": ["fire", "ghost"],
+    "isVisible": true
+}, {
+    "id": 609,
+    "name": "chandelure",
+    "types": ["fire", "ghost"],
+    "isVisible": true
+}, {
+    "id": 610,
+    "name": "axew",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 611,
+    "name": "fraxure",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 612,
+    "name": "haxorus",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 613,
+    "name": "cubchoo",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 614,
+    "name": "beartic",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 615,
+    "name": "cryogonal",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 616,
+    "name": "shelmet",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 617,
+    "name": "accelgor",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 618,
+    "name": "stunfisk",
+    "types": ["electric", "ground"],
+    "isVisible": true
+}, {
+    "id": 619,
+    "name": "mienfoo",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 620,
+    "name": "mienshao",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 621,
+    "name": "druddigon",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 622,
+    "name": "golett",
+    "types": ["ghost", "ground"],
+    "isVisible": true
+}, {
+    "id": 623,
+    "name": "golurk",
+    "types": ["ghost", "ground"],
+    "isVisible": true
+}, {
+    "id": 624,
+    "name": "pawniard",
+    "types": ["steel", "dark"],
+    "isVisible": true
+}, {
+    "id": 625,
+    "name": "bisharp",
+    "types": ["steel", "dark"],
+    "isVisible": true
+}, {
+    "id": 626,
+    "name": "bouffalant",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 627,
+    "name": "rufflet",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 628,
+    "name": "braviary",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 629,
+    "name": "vullaby",
+    "types": ["flying", "dark"],
+    "isVisible": true
+}, {
+    "id": 630,
+    "name": "mandibuzz",
+    "types": ["flying", "dark"],
+    "isVisible": true
+}, {
+    "id": 631,
+    "name": "heatmor",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 632,
+    "name": "durant",
+    "types": ["steel", "bug"],
+    "isVisible": true
+}, {
+    "id": 633,
+    "name": "deino",
+    "types": ["dragon", "dark"],
+    "isVisible": true
+}, {
+    "id": 634,
+    "name": "zweilous",
+    "types": ["dragon", "dark"],
+    "isVisible": true
+}, {
+    "id": 635,
+    "name": "hydreigon",
+    "types": ["dragon", "dark"],
+    "isVisible": true
+}, {
+    "id": 636,
+    "name": "larvesta",
+    "types": ["fire", "bug"],
+    "isVisible": true
+}, {
+    "id": 637,
+    "name": "volcarona",
+    "types": ["fire", "bug"],
+    "isVisible": true
+}, {
+    "id": 638,
+    "name": "cobalion",
+    "types": ["fighting", "steel"],
+    "isVisible": true
+}, {
+    "id": 639,
+    "name": "terrakion",
+    "types": ["fighting", "rock"],
+    "isVisible": true
+}, {
+    "id": 640,
+    "name": "virizion",
+    "types": ["fighting", "grass"],
+    "isVisible": true
+}, {
+    "id": 641,
+    "name": "tornadus-incarnate",
+    "types": ["flying"],
+    "isVisible": true
+}, {
+    "id": 642,
+    "name": "thundurus-incarnate",
+    "types": ["flying", "electric"],
+    "isVisible": true
+}, {
+    "id": 643,
+    "name": "reshiram",
+    "types": ["fire", "dragon"],
+    "isVisible": true
+}, {
+    "id": 644,
+    "name": "zekrom",
+    "types": ["electric", "dragon"],
+    "isVisible": true
+}, {
+    "id": 645,
+    "name": "landorus-incarnate",
+    "types": ["flying", "ground"],
+    "isVisible": true
+}, {
+    "id": 646,
+    "name": "kyurem",
+    "types": ["ice", "dragon"],
+    "isVisible": true
+}, {
+    "id": 647,
+    "name": "keldeo-ordinary",
+    "types": ["fighting", "water"],
+    "isVisible": true
+}, {
+    "id": 648,
+    "name": "meloetta-aria",
+    "types": ["psychic", "normal"],
+    "isVisible": true
+}, {
+    "id": 649,
+    "name": "genesect",
+    "types": ["steel", "bug"],
+    "isVisible": true
+}, {
+    "id": 650,
+    "name": "chespin",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 651,
+    "name": "quilladin",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 652,
+    "name": "chesnaught",
+    "types": ["fighting", "grass"],
+    "isVisible": true
+}, {
+    "id": 653,
+    "name": "fennekin",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 654,
+    "name": "braixen",
+    "types": ["fire"],
+    "isVisible": true
+}, {
+    "id": 655,
+    "name": "delphox",
+    "types": ["psychic", "fire"],
+    "isVisible": true
+}, {
+    "id": 656,
+    "name": "froakie",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 657,
+    "name": "frogadier",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 658,
+    "name": "greninja",
+    "types": ["dark", "water"],
+    "isVisible": true
+}, {
+    "id": 659,
+    "name": "bunnelby",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 660,
+    "name": "diggersby",
+    "types": ["ground", "normal"],
+    "isVisible": true
+}, {
+    "id": 661,
+    "name": "fletchling",
+    "types": ["flying", "normal"],
+    "isVisible": true
+}, {
+    "id": 662,
+    "name": "fletchinder",
+    "types": ["flying", "fire"],
+    "isVisible": true
+}, {
+    "id": 663,
+    "name": "talonflame",
+    "types": ["flying", "fire"],
+    "isVisible": true
+}, {
+    "id": 664,
+    "name": "scatterbug",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 665,
+    "name": "spewpa",
+    "types": ["bug"],
+    "isVisible": true
+}, {
+    "id": 666,
+    "name": "vivillon",
+    "types": ["flying", "bug"],
+    "isVisible": true
+}, {
+    "id": 667,
+    "name": "litleo",
+    "types": ["normal", "fire"],
+    "isVisible": true
+}, {
+    "id": 668,
+    "name": "pyroar",
+    "types": ["normal", "fire"],
+    "isVisible": true
+}, {
+    "id": 669,
+    "name": "flabebe",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 670,
+    "name": "floette",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 671,
+    "name": "florges",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 672,
+    "name": "skiddo",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 673,
+    "name": "gogoat",
+    "types": ["grass"],
+    "isVisible": true
+}, {
+    "id": 674,
+    "name": "pancham",
+    "types": ["fighting"],
+    "isVisible": true
+}, {
+    "id": 675,
+    "name": "pangoro",
+    "types": ["dark", "fighting"],
+    "isVisible": true
+}, {
+    "id": 676,
+    "name": "furfrou",
+    "types": ["normal"],
+    "isVisible": true
+}, {
+    "id": 677,
+    "name": "espurr",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 678,
+    "name": "meowstic-male",
+    "types": ["psychic"],
+    "isVisible": true
+}, {
+    "id": 679,
+    "name": "honedge",
+    "types": ["ghost", "steel"],
+    "isVisible": true
+}, {
+    "id": 680,
+    "name": "doublade",
+    "types": ["ghost", "steel"],
+    "isVisible": true
+}, {
+    "id": 681,
+    "name": "aegislash-shield",
+    "types": ["ghost", "steel"],
+    "isVisible": true
+}, {
+    "id": 682,
+    "name": "spritzee",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 683,
+    "name": "aromatisse",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 684,
+    "name": "swirlix",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 685,
+    "name": "slurpuff",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 686,
+    "name": "inkay",
+    "types": ["psychic", "dark"],
+    "isVisible": true
+}, {
+    "id": 687,
+    "name": "malamar",
+    "types": ["psychic", "dark"],
+    "isVisible": true
+}, {
+    "id": 688,
+    "name": "binacle",
+    "types": ["water", "rock"],
+    "isVisible": true
+}, {
+    "id": 689,
+    "name": "barbaracle",
+    "types": ["water", "rock"],
+    "isVisible": true
+}, {
+    "id": 690,
+    "name": "skrelp",
+    "types": ["water", "poison"],
+    "isVisible": true
+}, {
+    "id": 691,
+    "name": "dragalge",
+    "types": ["dragon", "poison"],
+    "isVisible": true
+}, {
+    "id": 692,
+    "name": "clauncher",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 693,
+    "name": "clawitzer",
+    "types": ["water"],
+    "isVisible": true
+}, {
+    "id": 694,
+    "name": "helioptile",
+    "types": ["normal", "electric"],
+    "isVisible": true
+}, {
+    "id": 695,
+    "name": "heliolisk",
+    "types": ["normal", "electric"],
+    "isVisible": true
+}, {
+    "id": 696,
+    "name": "tyrunt",
+    "types": ["dragon", "rock"],
+    "isVisible": true
+}, {
+    "id": 697,
+    "name": "tyrantrum",
+    "types": ["dragon", "rock"],
+    "isVisible": true
+}, {
+    "id": 698,
+    "name": "amaura",
+    "types": ["ice", "rock"],
+    "isVisible": true
+}, {
+    "id": 699,
+    "name": "aurorus",
+    "types": ["ice", "rock"],
+    "isVisible": true
+}, {
+    "id": 700,
+    "name": "sylveon",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 701,
+    "name": "hawlucha",
+    "types": ["flying", "fighting"],
+    "isVisible": true
+}, {
+    "id": 702,
+    "name": "dedenne",
+    "types": ["fairy", "electric"],
+    "isVisible": true
+}, {
+    "id": 703,
+    "name": "carbink",
+    "types": ["fairy", "rock"],
+    "isVisible": true
+}, {
+    "id": 704,
+    "name": "goomy",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 705,
+    "name": "sliggoo",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 706,
+    "name": "goodra",
+    "types": ["dragon"],
+    "isVisible": true
+}, {
+    "id": 707,
+    "name": "klefki",
+    "types": ["fairy", "steel"],
+    "isVisible": true
+}, {
+    "id": 708,
+    "name": "phantump",
+    "types": ["grass", "ghost"],
+    "isVisible": true
+}, {
+    "id": 709,
+    "name": "trevenant",
+    "types": ["grass", "ghost"],
+    "isVisible": true
+}, {
+    "id": 710,
+    "name": "pumpkaboo-average",
+    "types": ["grass", "ghost"],
+    "isVisible": true
+}, {
+    "id": 711,
+    "name": "gourgeist-average",
+    "types": ["grass", "ghost"],
+    "isVisible": true
+}, {
+    "id": 712,
+    "name": "bergmite",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 713,
+    "name": "avalugg",
+    "types": ["ice"],
+    "isVisible": true
+}, {
+    "id": 714,
+    "name": "noibat",
+    "types": ["dragon", "flying"],
+    "isVisible": true
+}, {
+    "id": 715,
+    "name": "noivern",
+    "types": ["dragon", "flying"],
+    "isVisible": true
+}, {
+    "id": 716,
+    "name": "xerneas",
+    "types": ["fairy"],
+    "isVisible": true
+}, {
+    "id": 717,
+    "name": "yveltal",
+    "types": ["flying", "dark"],
+    "isVisible": true
+}, {
+    "id": 718,
+    "name": "zygarde",
+    "types": ["ground", "dragon"],
+    "isVisible": true
+}, {
+    "id": 719,
+    "name": "diancie",
+    "types": ["fairy", "rock"],
+    "isVisible": true
+}, {
+    "id": 720,
+    "name": "hoopa",
+    "types": ["ghost", "psychic"],
+    "isVisible": true
+}, {
+    "id": 721,
+    "name": "volcanion",
+    "types": ["fire", "water"],
+    "isVisible": true
+}];
 export default nationalDex;

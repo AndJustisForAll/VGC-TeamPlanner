@@ -1,4 +1,6 @@
-
+.hidden {
+    display: none !important;
+}
 .sprite, .art{
     display:inline-block;
     background-color:transparent;
